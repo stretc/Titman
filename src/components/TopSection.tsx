@@ -79,8 +79,8 @@ export const TopSection = () => {
                     className="mr-[5px]"
                   />
                   <p className="text-[#fff] font-[700] text-[16px] flex">
-                    123 Main St. <br />
-                    City, State 12345
+                    408 N. Maple St. <br />
+                    Garnett, KS 66032
                   </p>
                 </a>
               </div>
