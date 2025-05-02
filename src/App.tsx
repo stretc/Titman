@@ -3,6 +3,7 @@ import { Promise } from "./components/Promise";
 import { Services } from "./components/Services";
 import { Story } from "./components/Story";
 import { TopSection } from "./components/TopSection";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Services />
       <Promise />
       <Story />
+      <Footer />
     </main>
   );
 }
