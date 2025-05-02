@@ -5,6 +5,11 @@
 #root {
   margin: 0;
   padding: 0;
+  transition: all 0.2s ease-in;
+}
+
+* {
+  transition: all 0.2s ease-in;
 }
 
 
@@ -153,4 +158,40 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/* Small Screens 430px and below */
+@media screen and (max-width: 640px) {
+  .top-section-continer {
+    width: 95%;
+  }
+
+  .info-active {
+    display: none;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .hero-btns > * {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .shop-btn {
+    margin-top: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+    line-height: 40px;
+  }
+
+  .bottom-tabs-active {
+    display: none;
+  }
 }

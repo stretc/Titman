@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ArrowRight,
   Clock,
@@ -13,9 +12,9 @@ export const TopSection = () => {
       {/* Top Section - Change this bg image */}
       <div className="flex h-[900px] pt-[26px] flex-col items-center justify-start bg-[url('https://uploads-ssl.webflow.com/6033b644793e4daa2b27e2e5/6033bc35e0be0e2ce00b4962_BG%20Image.png')] bg-cover bg-no-repeat bg-center">
         {/* Navbar Top */}
-        <div className="z-100 sticky flex w-[80%] h-auto flex-col bg-[hsla(0, 0%, 86.7%, 0)]">
+        <div className="top-section-container z-100 sticky flex w-[80%] h-auto flex-col bg-[hsla(0, 0%, 86.7%, 0)]">
           <div className="flex h-auto justify-between items-center">
-            <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center">
+            <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center max-sm:mr-0">
               <a href="#">
                 <img
                   src="/public/logo2.png"
@@ -26,7 +25,7 @@ export const TopSection = () => {
               </a>
             </div>
 
-            <div className="flex">
+            <div className="flex info-active">
               <div className="w-auto flex h-auto">
                 {/* Hours */}
                 <div className="flex flex-col justify-center mr-[30px] items-center">
@@ -87,10 +86,10 @@ export const TopSection = () => {
             </div>
           </div>
 
-          <hr className="h-[1px] bg-[#fff] border-[#fff]" />
+          <hr className="h-[1px] bg-[#fff] border-[#fff] w-full" />
 
           {/* NavBar Bottom */}
-          <div className="flex h-[10px] justify-between items-center bg-transparent mt-[50px]">
+          <div className="bottom-tabs-active flex h-[10px] justify-between items-center bg-transparent mt-[50px]">
             <div className="ml-[20px] flex">
               <div className="p-[20px]">
                 <a
@@ -136,13 +135,13 @@ export const TopSection = () => {
 
         {/* Hero Section */}
         <div className="w-[71%] h-full">
-          <div className="w-[630px] h-[112px]">
+          <div className="w-[630px] h-[112px] max-sm:w-auto">
             <h1 className="hero-text mt-[126px] text-[#fff] mb-0 text-[60px] leading-[60px] font-[800]">
               Driven by Trust. Powered by Precision.
             </h1>
           </div>
           <div className="hero-btns mt-[60px] flex items-center justify-start">
-            <button className="mr-[150px] shadow-2xl">
+            <button className="appt-btn mr-[150px] shadow-2xl">
               <p>Make an Appointment</p>
               <div className="appt-arrow">
                 <ArrowRight
@@ -153,7 +152,7 @@ export const TopSection = () => {
                 />
               </div>
             </button>
-            <button className=" shadow-2xl">
+            <button className="shop-btn shadow-2xl">
               <p>Shop</p>
               <div className="appt-arrow">
                 <ArrowRight
