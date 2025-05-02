@@ -7,14 +7,10 @@ export const Footer = () => {
         {/* Logo Section */}
         <div className="flex flex-col items-center">
           <a href="#">
-            <img
-              src="/public/logo2.png"
-              alt="Titman Tire & Lube"
-              className="w-32"
-            />
+            <div className="w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
           </a>
           <p className="mt-2 text-sm text-gray-300">
-            Making the web a better place.
+            Making you a better vehicle.
           </p>
         </div>
 

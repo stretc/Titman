@@ -10,18 +10,13 @@ export const TopSection = () => {
   return (
     <section>
       {/* Top Section - Change this bg image */}
-      <div className="flex h-[900px] pt-[26px] flex-col items-center justify-start bg-[url('https://uploads-ssl.webflow.com/6033b644793e4daa2b27e2e5/6033bc35e0be0e2ce00b4962_BG%20Image.png')] bg-cover bg-no-repeat bg-center">
+      <div className="flex h-[900px] pt-[26px] flex-col items-center justify-start bg-[url('/public/opening-bg.png')] bg-cover bg-no-repeat bg-center">
         {/* Navbar Top */}
         <div className="top-section-container z-100 sticky flex w-[80%] h-auto flex-col bg-[hsla(0, 0%, 86.7%, 0)]">
           <div className="flex h-auto justify-between items-center">
             <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center max-sm:mr-0">
               <a href="#">
-                <img
-                  src="/public/logo2.png"
-                  alt="Titman Tire & Lube"
-                  height="50px"
-                  width="150px"
-                />
+                <div className="w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
               </a>
             </div>
 
