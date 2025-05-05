@@ -1,9 +1,18 @@
-import { Clock, Envelope, MapPin, Phone } from "@phosphor-icons/react";
+import {
+  Clock,
+  Envelope,
+  House,
+  MapPin,
+  Phone,
+  ShieldCheck,
+  UsersFour,
+  Wrench,
+} from "@phosphor-icons/react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#02133c] text-white pr-[30px] pl-[30px]">
-      <div className="max-w-7xl mx-auto px-4 py-12 flex flex-col md:flex-row justify-between items-start gap-8">
+    <footer className="bg-[#02133c] text-white">
+      <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row justify-between items-start gap-8">
         {/* Logo Section */}
         <div className="flex flex-col items-center">
           <a href="#">
@@ -15,47 +24,84 @@ export const Footer = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-col space-y-2 items-center">
-          <h3 className="font-semibold text-lg">Navigation</h3>
-          <a href="#" className="text-sm hover:underline">
-            Home
-          </a>
-          <a href="#" className="text-sm hover:underline">
-            Services
-          </a>
-          <a href="#" className="text-sm hover:underline">
-            Shop
-          </a>
-          <a href="#" className="text-sm hover:underline">
-            Our Story
-          </a>
-          <a href="#" className="text-sm hover:underline">
-            Contact
-          </a>
+        <div className="flex flex-col space-y-5">
+          <h3 className="font-semibold text-lg flex w-full items-center justify-center">
+            Navigation
+          </h3>
+          <hr className="w-full h-[1px] bg-gray-300" />
+          <div className="flex">
+            <div className="flex flex-col space-y-5">
+              <a
+                className="flex items-center cursor-pointer footer-link"
+                href="#"
+              >
+                <House
+                  size={20}
+                  style={{ fill: "#fff", marginRight: "25px" }}
+                />
+                <span className="underline-anim text-m">Home</span>
+              </a>
+              <a
+                className="flex items-center cursor-pointer footer-link"
+                href="#"
+              >
+                <Wrench
+                  size={20}
+                  style={{ fill: "#fff", marginRight: "25px" }}
+                />
+                <span className="underline-anim text-m">Services</span>
+              </a>
+              <a
+                className="flex items-center cursor-pointer footer-link"
+                href="#"
+              >
+                <ShieldCheck
+                  size={20}
+                  style={{ fill: "#fff", marginRight: "25px" }}
+                />
+                <span className="underline-anim text-m">Our Promise</span>
+              </a>
+              <a
+                className="flex items-center cursor-pointer footer-link"
+                href="#"
+              >
+                <UsersFour
+                  size={20}
+                  style={{ fill: "#fff", marginRight: "25px" }}
+                />
+                <span className="underline-anim text-m">Team Members</span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col space-y-2">
+        <div className="flex flex-col space-y-5">
           <h3 className="font-semibold text-lg flex w-full items-center justify-center">
             Contact Us
           </h3>
+          <hr className="w-full h-[1px] bg-gray-300" />
+          <a className="flex items-center cursor-pointer footer-link">
+            <Envelope size={20} style={{ fill: "#fff", marginRight: "25px" }} />
+            <span className="underline-anim text-m">email@example.com</span>
+          </a>
+          <a className="flex items-center cursor-pointer footer-link">
+            <Phone size={20} style={{ fill: "#fff", marginRight: "25px" }} />
+            <span className="underline-anim text-m">+1 (555) 123-4567</span>
+          </a>
+          <a className="flex items-center cursor-pointer footer-link" href="#">
+            <MapPin size={20} style={{ fill: "#fff", marginRight: "25px" }} />
+            <span className="underline-anim text-m">
+              408 N. Maple St,
+              <br />
+              Garnett Ks 66032
+            </span>
+          </a>
           <div className="flex items-center">
-            <Envelope size={18} style={{ fill: "#fff", marginRight: "5px" }} />
-            <p className="text-sm">email@example.com</p>
-          </div>
-          <div className="flex items-center">
-            <Phone size={18} style={{ fill: "#fff", marginRight: "5px" }} />
-            <p className="text-sm">+1 (555) 123-4567</p>
-          </div>
-          <div className="flex items-center">
-            <MapPin size={18} style={{ fill: "#fff", marginRight: "5px" }} />
-            <p className="text-sm">408 N. Maple St. Garnett Ks 66032</p>
-          </div>
-          <div className="flex items-center">
-            <Clock size={18} style={{ fill: "#fff", marginRight: "5px" }} />
+            <Clock size={20} style={{ fill: "#fff", marginRight: "25px" }} />
             <div className="flex flex-col items-center">
-              <p className="text-sm">Hours:</p>
-              <p className="text-sm">Mon - Fri: 8am - 5pm</p>
+              <p className="text-m">Hours:</p>
+              <p className="text-m">Mon - Fri: 8am - 5pm</p>
             </div>
           </div>
         </div>
