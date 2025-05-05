@@ -1,9 +1,12 @@
 import {
   ArrowRight,
   Clock,
-  MagnifyingGlass,
+  Info,
   MapPin,
   Phone,
+  ShieldCheck,
+  UsersFour,
+  Wrench,
 } from "@phosphor-icons/react";
 
 export const TopSection = () => {
@@ -20,62 +23,78 @@ export const TopSection = () => {
               </a>
             </div>
 
-            <div className="flex info-active">
-              <div className="w-auto flex h-auto">
-                {/* Hours */}
-                <div className="flex flex-col justify-center mr-[30px] items-center">
-                  <div className="flex items-center mb-[20px]">
-                    <Clock
-                      width="24px"
-                      height="24px"
-                      style={{ color: "#fff" }}
-                      className="mr-[5px]"
-                      weight="bold"
-                    />
-                    <p className="hours-text text-[#fff] font-[700] text-[18px]">
-                      Hours:
-                    </p>
-                  </div>
-                  <div className="flex h-auto flex-col">
-                    <div className="hours-text text-[#fff] text-[16px] font-[600]">
-                      Mon - Sat: 7:00 am - 6:00 pm
+            <div className="flex justify-end items-center w-full h-full info-active">
+              <div className="flex gap-[30px]">
+                {/* HOURS BLOCK */}
+                <div className="flex flex-col justify-center items-center h-[150px] text-center mr-[25px]">
+                  <div className="flex flex-col items-center mb-[10px] pointer-events-none">
+                    <div className="flex mb-[10px]">
+                      <Clock
+                        width="24px"
+                        height="24px"
+                        style={{ color: "#fff" }}
+                        className="mr-[5px]"
+                      />
+                      <p className="text-[#fff] font-[700] text-[18px]">
+                        Hours:
+                      </p>
                     </div>
-                  </div>
-                </div>
-                {/* Phone Number */}
-                <div className="flex flex-col mr-[30px] items-center">
-                  <div className="flex items-center mb-[20px]">
-                    <Phone
-                      width="24px"
-                      height="24px"
-                      weight="bold"
-                      fill="#fff"
-                      className="mr-[5px]"
-                    />
-                    <p className="text-[#fff] font-[700] text-[18px]">
-                      Call Us:
+                    <p className="text-[#fff] text-[18px] font-[700]">
+                      Mon - Fri: 8:00 am - 5:00 pm
+                    </p>
+                    <p className="text-[#fff] text-[18px] font-[700]">
+                      Sat: 9:00 am - 1:00 pm
                     </p>
                   </div>
-                  <p className="text-[#fff] text-[16px] font-[600]">
-                    (555) 555-5555
-                  </p>
                 </div>
-                {/* Address */}
-                <a
-                  href="#"
-                  className="max-w-[100%] relative flex w-[211px] pl-[15px] justify-center flex-row items-center decoration-0 h-full"
-                >
-                  <MapPin
-                    width="24px"
-                    height="24px"
-                    weight="bold"
-                    fill="#fff"
-                    className="mr-[5px]"
-                  />
-                  <p className="text-[#fff] font-[700] text-[16px] flex">
-                    408 N. Maple St. <br />
-                    Garnett, KS 66032
-                  </p>
+
+                {/* PHONE BLOCK */}
+                <div className="flex items-center justify-center h-[150px] text-center cursor-pointer mr-[25px]">
+                  <a
+                    className="underline-anim flex items-center text-center mb-[10px]"
+                    href="#"
+                  >
+                    <div className="flex flex-col items-center">
+                      <div className="flex items-center">
+                        <Phone
+                          width="24px"
+                          height="24px"
+                          weight="bold"
+                          fill="#fff"
+                          className="mr-[5px]"
+                        />
+                        <p className="text-[#fff] font-[700] text-[18px]">
+                          Call Us:
+                        </p>
+                      </div>
+                      <p className="text-[#fff] text-[18px] font-[600] mt-[25px]">
+                        +1 (620) 363-0432
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                {/* ADDRESS BLOCK */}
+                <a className="flex items-center h-[150px] text-center cursor-pointer">
+                  <div className="underline-anim items-center mb-[10px]">
+                    <div className="flex">
+                      <MapPin
+                        width="24px"
+                        height="24px"
+                        weight="bold"
+                        fill="#fff"
+                        className="mr-[5px]"
+                      />
+                      <p className="text-[#fff] font-[700] text-[18px]">
+                        Find Us At:
+                      </p>
+                    </div>
+                    <p className="text-[#fff] text-[18px] font-[600] mt-[25px]">
+                      408 N. Maple St.
+                      <br />
+                      Garnett, KS 66032
+                    </p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -91,38 +110,88 @@ export const TopSection = () => {
                   href="#"
                   className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
                 >
-                  Services
+                  <div className="flex items-center">
+                    <Wrench
+                      size={25}
+                      style={{
+                        fill: "#fff",
+                        marginRight: "5px",
+                        fontWeight: "bold",
+                      }}
+                    />
+                    <p className="underline-anim">Services</p>
+                  </div>
                 </a>
               </div>
+
+              <div className="h-[50px] w-[1px] bg-white self-center ml-[15px] mr-[15px]" />
+
               <div className="p-[20px]">
                 <a
                   href="#"
                   className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
                 >
-                  Shop
+                  <div className="flex items-center">
+                    <ShieldCheck
+                      size={25}
+                      style={{
+                        fill: "#fff",
+                        marginRight: "5px",
+                        fontWeight: "bold",
+                      }}
+                    />
+                    <p className="underline-anim">Our Promise</p>
+                  </div>
                 </a>
               </div>
+
+              <div className="h-[50px] w-[1px] bg-white self-center ml-[15px] mr-[15px]" />
+
               <div className="p-[20px]">
                 <a
                   href="#"
                   className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
                 >
-                  Our Story
+                  <div className="flex items-center">
+                    <UsersFour
+                      size={25}
+                      style={{
+                        fill: "#fff",
+                        marginRight: "5px",
+                        fontWeight: "bold",
+                      }}
+                    />
+                    <p className="underline-anim">Team Members</p>
+                  </div>
                 </a>
               </div>
             </div>
 
-            {/* Search */}
+            {/* Veterans */}
             <div className="mr-[20px] relative flex items-center">
               <div className="flex w-auto">
-                <button className="w-[36px] h-[36px] cursor-pointer flex items-center justify-center">
-                  <MagnifyingGlass
-                    width="24px"
-                    height="24px"
-                    weight="bold"
-                    fill="#fff"
-                  />
-                </button>
+                <div className="flex justify-between">
+                  <div className="relative decoration-none font-[#333333] flex mr-[20px] items-center max-sm:mr-0">
+                    <div className="w-[35px] h-[35px] bg-[url('/flag.png')] bg-center bg-contain bg-no-repeat"></div>
+                  </div>
+
+                  <div className="text-[#fff] font-[700] text-[18px] flex items-center">
+                    We Honor Our Veterans
+                  </div>
+
+                  <div className="flex items-center ml-[20px]">
+                    <div className="cursor-pointer">
+                      <Info
+                        size={25}
+                        style={{
+                          fill: "#fff",
+                          marginRight: "5px",
+                          fontWeight: "bold",
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

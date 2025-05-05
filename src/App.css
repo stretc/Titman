@@ -38,6 +38,13 @@
 
 /* Animation Components End */
 
+.shield {
+  background: url("../src/images/shield.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hero-text {
   margin-top: 126px;
   margin-bottom: 0px;
