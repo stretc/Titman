@@ -192,39 +192,53 @@
   background-repeat: no-repeat;
 }
 
-/* Small Screens 430px and below */
-@media screen and (max-width: 640px) {
-  .top-section-continer {
-    width: 95%;
+/* XL */
+@media screen and (max-width: 1400px) {
+  .top-section-container,
+  .top-section-container p,
+  .top-section-container a,
+  .top-section-container h1,
+  .top-section-container button {
+    font-size: 0.875rem !important;
   }
 
-  .info-active {
-    display: none;
+  .top-section-container h1.hero-text {
+    font-size: 2.5rem !important; /* 40px */
+    line-height: 2.75rem !important;
   }
 
-  .hero-btns {
-    flex-direction: column;
-    padding: 0;
+  .icons {
+    height: 20px;
+    width: 20px;
   }
 
-  .hero-btns > * {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .shop-btn {
-    margin-top: 20px;
-  }
-
-  .hero-text {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 80px;
-    line-height: 40px;
-  }
-
-  .bottom-tabs-active {
-    display: none;
+  .imgs {
+    height: 25px;
+    width: 25px;
   }
 }
 
+/* LG */
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .top-section-container,
+  .top-section-container p,
+  .top-section-container a,
+  .top-section-container h1,
+  .top-section-container button {
+    font-size: 0.75rem !important;
+  }
+
+  .top-text {
+    display: none !important;
+  }
+
+  .top-section-container h1.hero-text {
+    font-size: 2.5rem !important; /* 40px */
+    line-height: 2.75rem !important;
+  }
+}
