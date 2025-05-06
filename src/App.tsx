@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <TopSection />
       <Services />
       <Promise />

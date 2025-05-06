@@ -11,20 +11,20 @@ import {
 
 export const TopSection = () => {
   return (
-    <section>
+    <section className="max-w-full">
       {/* Top Section - Change this bg image */}
       <div className="flex h-[900px] pt-[26px] flex-col items-center justify-start bg-[url('/public/opening-bg.png')] bg-cover bg-no-repeat bg-center">
         {/* Navbar Top */}
         <div className="top-section-container z-100 sticky flex w-[80%] h-auto flex-col bg-[hsla(0, 0%, 86.7%, 0)]">
           <div className="flex h-auto justify-between items-center">
-            <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center max-sm:mr-0">
+            <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center">
               <a href="#">
-                <div className="w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
+                <div className="logo w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
               </a>
             </div>
 
             <div className="flex justify-end items-center w-full h-full info-active">
-              <div className="flex gap-[30px]">
+              <div className="flex gap-[30px] mr-[20px]">
                 {/* HOURS BLOCK */}
                 <div className="flex flex-col justify-center items-center h-[150px] text-center mr-[25px]">
                   <div className="flex flex-col items-center mb-[10px] pointer-events-none">
@@ -35,7 +35,7 @@ export const TopSection = () => {
                         style={{ color: "#fff" }}
                         className="mr-[5px]"
                       />
-                      <p className="text-[#fff] font-[700] text-[18px]">
+                      <p className="top-text text-[#fff] font-[700] text-[18px]">
                         Hours:
                       </p>
                     </div>
@@ -59,11 +59,10 @@ export const TopSection = () => {
                         <Phone
                           width="24px"
                           height="24px"
-                          weight="bold"
                           fill="#fff"
                           className="mr-[5px]"
                         />
-                        <p className="text-[#fff] font-[700] text-[18px]">
+                        <p className="top-text text-[#fff] font-[700] text-[18px]">
                           Call Us:
                         </p>
                       </div>
@@ -77,15 +76,14 @@ export const TopSection = () => {
                 {/* ADDRESS BLOCK */}
                 <a className="flex items-center h-[150px] text-center cursor-pointer">
                   <div className="underline-anim items-center mb-[10px]">
-                    <div className="flex">
+                    <div className="flex items-center justify-center">
                       <MapPin
                         width="24px"
                         height="24px"
-                        weight="bold"
                         fill="#fff"
                         className="mr-[5px]"
                       />
-                      <p className="text-[#fff] font-[700] text-[18px]">
+                      <p className="top-text text-[#fff] font-[700] text-[18px]">
                         Find Us At:
                       </p>
                     </div>
@@ -103,7 +101,7 @@ export const TopSection = () => {
           <hr className="h-[1px] bg-[#fff] border-[#fff] w-full" />
 
           {/* NavBar Bottom */}
-          <div className="bottom-tabs-active flex h-[10px] justify-between items-center bg-transparent mt-[50px]">
+          <div className="bottom-tabs-active flex h-auto justify-between items-center bg-transparent">
             <div className="ml-[20px] flex">
               <div className="p-[20px]">
                 <a
@@ -172,12 +170,12 @@ export const TopSection = () => {
               <div className="flex w-auto">
                 <div className="flex justify-between">
                   <div className="relative decoration-none font-[#333333] flex mr-[20px] items-center max-sm:mr-0">
-                    <div className="w-[35px] h-[35px] bg-[url('/flag.png')] bg-center bg-contain bg-no-repeat"></div>
+                    <div className="imgs w-[35px] h-[35px] bg-[url('/flag.png')] bg-center bg-contain bg-no-repeat"></div>
                   </div>
 
-                  <div className="text-[#fff] font-[700] text-[18px] flex items-center">
+                  <p className="text-[#fff] font-[700] text-[18px] flex items-center">
                     We Honor Our Veterans
-                  </div>
+                  </p>
 
                   <div className="flex items-center ml-[20px]">
                     <div className="cursor-pointer">
@@ -188,6 +186,7 @@ export const TopSection = () => {
                           marginRight: "5px",
                           fontWeight: "bold",
                         }}
+                        className="icons"
                       />
                     </div>
                   </div>
@@ -198,13 +197,13 @@ export const TopSection = () => {
         </div>
 
         {/* Hero Section */}
-        <div className="w-[71%] h-full">
-          <div className="w-[630px] h-[112px] max-sm:w-auto">
+        <div className="hero-section w-[71%] h-auto">
+          <div className="w-[630px] h-[112px] max-[768px]:w-auto">
             <h1 className="hero-text mt-[126px] text-[#fff] mb-0 text-[60px] leading-[60px] font-[800]">
               Driven by Trust. Powered by Precision.
             </h1>
           </div>
-          <div className="hero-btns mt-[60px] flex items-center justify-start">
+          <div className="hero-btns mt-[60px] flex items-center justify-start max-sm:w-auto max-[768px]:max-w-[300px] max-[768px]:max-h-[112px]">
             <button className="appt-btn mr-[150px] shadow-2xl">
               <p>Make an Appointment</p>
               <div className="appt-arrow">
