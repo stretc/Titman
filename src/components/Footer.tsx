@@ -101,7 +101,8 @@ export const Footer = () => {
             <Clock size={20} style={{ fill: "#fff", marginRight: "25px" }} />
             <div className="flex flex-col items-center">
               <p className="text-m">Hours:</p>
-              <p className="text-m">Mon - Fri: 8am - 5pm</p>
+              <p className="text-m">Mon - Fri: 8 am - 5 pm</p>
+              <p className="text-m">Sat: 9 am - 1 pm</p>
             </div>
           </div>
         </div>
