@@ -1,5 +1,4 @@
 import {
-  ArrowRight,
   Clock,
   Info,
   MapPin,
@@ -8,225 +7,88 @@ import {
   UsersFour,
   Wrench,
 } from "@phosphor-icons/react";
+import "./styles/TopSection.css";
 
 export const TopSection = () => {
   return (
-    <section className="max-w-full">
-      {/* Top Section - Change this bg image */}
-      <div className="flex h-[900px] pt-[26px] flex-col items-center justify-start bg-[url('/public/opening-bg.png')] bg-cover bg-no-repeat bg-center">
+    <section className="top-section">
+      <div className="hero-bg">
         {/* Navbar Top */}
-        <div className="top-section-container z-100 sticky flex w-[80%] h-auto flex-col bg-[hsla(0, 0%, 86.7%, 0)]">
-          <div className="flex h-auto justify-between items-center">
-            <div className="relative float-left decoration-none font-[#333333] flex mr-[30px] items-center">
+        <div className="navbar">
+          <div className="navbar-top">
+            <div className="logo-phone">
               <a href="#">
-                <div className="logo w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
+                <div className="logo" />
               </a>
-            </div>
-
-            <div className="flex justify-end items-center w-full h-full info-active">
-              <div className="flex gap-[30px] mr-[20px]">
-                {/* HOURS BLOCK */}
-                <div className="flex flex-col justify-center items-center h-[150px] text-center mr-[25px]">
-                  <div className="flex flex-col items-center mb-[10px] pointer-events-none">
-                    <div className="flex mb-[10px]">
-                      <Clock
-                        width="24px"
-                        height="24px"
-                        style={{ color: "#fff" }}
-                        className="mr-[5px]"
-                      />
-                      <p className="top-text text-[#fff] font-[700] text-[18px]">
-                        Hours:
-                      </p>
-                    </div>
-                    <p className="text-[#fff] text-[18px] font-[700]">
-                      Mon - Fri: 8:00 am - 5:00 pm
-                    </p>
-                    <p className="text-[#fff] text-[18px] font-[700]">
-                      Sat: 9:00 am - 1:00 pm
-                    </p>
-                  </div>
-                </div>
-
-                {/* PHONE BLOCK */}
-                <div className="flex items-center justify-center h-[150px] text-center cursor-pointer mr-[25px]">
-                  <a
-                    className="underline-anim flex items-center text-center mb-[10px]"
-                    href="#"
-                  >
-                    <div className="flex flex-col items-center">
-                      <div className="flex items-center">
-                        <Phone
-                          width="24px"
-                          height="24px"
-                          fill="#fff"
-                          className="mr-[5px]"
-                        />
-                        <p className="top-text text-[#fff] font-[700] text-[18px]">
-                          Call Us:
-                        </p>
-                      </div>
-                      <p className="text-[#fff] text-[18px] font-[600] mt-[25px]">
-                        +1 (620) 363-0432
-                      </p>
-                    </div>
-                  </a>
-                </div>
-
-                {/* ADDRESS BLOCK */}
-                <a className="flex items-center h-[150px] text-center cursor-pointer">
-                  <div className="underline-anim items-center mb-[10px]">
-                    <div className="flex items-center justify-center">
-                      <MapPin
-                        width="24px"
-                        height="24px"
-                        fill="#fff"
-                        className="mr-[5px]"
-                      />
-                      <p className="top-text text-[#fff] font-[700] text-[18px]">
-                        Find Us At:
-                      </p>
-                    </div>
-                    <p className="text-[#fff] text-[18px] font-[600] mt-[25px]">
-                      408 N. Maple St.
-                      <br />
-                      Garnett, KS 66032
-                    </p>
-                  </div>
+              <div className="phone">
+                <Phone size={30} className="icon" />
+                <a className="underline-anim" href="tel: +1 (620) 363-0432">
+                  +1 (620) 363-0432
                 </a>
               </div>
+            </div>
+
+            <div className="info">
+              <div className="hours">
+                <div className="info-title">
+                  <Clock size={22} className="icon" /> Hours:
+                </div>
+                <div className="info-text">
+                  Mon - Fri: 8:00am - 5:00pm
+                  <br />
+                  Sat: 9:00am - 1:00pm
+                </div>
+              </div>
+
+              <a className="address underline-anim">
+                <div className="info-title">
+                  <MapPin size={22} className="icon" /> Address:
+                </div>
+                <div className="info-text">
+                  408 N. Maple
+                  <br />
+                  Garnett, KS 66032
+                </div>
+              </a>
             </div>
           </div>
 
-          <hr className="h-[1px] bg-[#fff] border-[#fff] w-full" />
+          <hr className="divider" />
 
-          {/* NavBar Bottom */}
-          <div className="bottom-tabs-active flex h-auto justify-between items-center bg-transparent">
-            <div className="ml-[20px] flex">
-              <div className="p-[20px]">
-                <a
-                  href="#"
-                  className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
-                >
-                  <div className="flex items-center">
-                    <Wrench
-                      size={25}
-                      style={{
-                        fill: "#fff",
-                        marginRight: "5px",
-                        fontWeight: "bold",
-                      }}
-                    />
-                    <p className="underline-anim">Services</p>
-                  </div>
-                </a>
-              </div>
-
-              <div className="h-[50px] w-[1px] bg-white self-center ml-[15px] mr-[15px]" />
-
-              <div className="p-[20px]">
-                <a
-                  href="#"
-                  className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
-                >
-                  <div className="flex items-center">
-                    <ShieldCheck
-                      size={25}
-                      style={{
-                        fill: "#fff",
-                        marginRight: "5px",
-                        fontWeight: "bold",
-                      }}
-                    />
-                    <p className="underline-anim">Our Promise</p>
-                  </div>
-                </a>
-              </div>
-
-              <div className="h-[50px] w-[1px] bg-white self-center ml-[15px] mr-[15px]" />
-
-              <div className="p-[20px]">
-                <a
-                  href="#"
-                  className="relative inline-block ml-auto mr-auto text-[#fff] font-[700] text-[18px]"
-                >
-                  <div className="flex items-center">
-                    <UsersFour
-                      size={25}
-                      style={{
-                        fill: "#fff",
-                        marginRight: "5px",
-                        fontWeight: "bold",
-                      }}
-                    />
-                    <p className="underline-anim">Team Members</p>
-                  </div>
-                </a>
-              </div>
+          {/* Navbar Bottom */}
+          <div className="navbar-bottom">
+            <div className="tabs">
+              <a href="#" className="tab">
+                <Wrench size={25} className="icon" />
+                <p className="underline-anim">Services</p>
+              </a>
+              <span className="divider-vertical" />
+              <a href="#" className="tab">
+                <ShieldCheck size={25} className="icon" />
+                <p className="underline-anim">Our Promise</p>
+              </a>
+              <span className="divider-vertical" />
+              <a href="#" className="tab">
+                <UsersFour size={25} className="icon" />
+                <p className="underline-anim">Team Members</p>
+              </a>
             </div>
 
-            {/* Veterans */}
-            <div className="mr-[20px] relative flex items-center">
-              <div className="flex w-auto">
-                <div className="flex justify-between">
-                  <div className="relative decoration-none font-[#333333] flex mr-[20px] items-center max-sm:mr-0">
-                    <div className="imgs w-[35px] h-[35px] bg-[url('/flag.png')] bg-center bg-contain bg-no-repeat"></div>
-                  </div>
-
-                  <p className="text-[#fff] font-[700] text-[18px] flex items-center">
-                    We Honor Our Veterans
-                  </p>
-
-                  <div className="flex items-center ml-[20px]">
-                    <div className="cursor-pointer">
-                      <Info
-                        size={25}
-                        style={{
-                          fill: "#fff",
-                          marginRight: "5px",
-                          fontWeight: "bold",
-                        }}
-                        className="icons"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="veterans">
+              <div className="flag" />
+              <p className="veterans-text">We Honor Our Veterans</p>
+              <Info size={25} fill="#fff" className="icon pointer" />
             </div>
           </div>
         </div>
 
         {/* Hero Section */}
-        <div className="hero-section w-[71%] h-auto">
-          <div className="w-[630px] h-[112px] max-[768px]:w-auto">
-            <h1 className="hero-text mt-[126px] text-[#fff] mb-0 text-[60px] leading-[60px] font-[800]">
-              Driven by Trust. Powered by Precision.
-            </h1>
-          </div>
-          <div className="hero-btns mt-[60px] flex items-center justify-start max-sm:w-auto max-[768px]:max-w-[300px] max-[768px]:max-h-[112px]">
-            <button className="appt-btn mr-[150px] shadow-2xl">
-              <p>Make an Appointment</p>
-              <div className="appt-arrow">
-                <ArrowRight
-                  width="16px"
-                  height="16px"
-                  weight="bold"
-                  fill="#fff"
-                />
-              </div>
-            </button>
-            <button className="shop-btn shadow-2xl">
-              <p>Shop</p>
-              <div className="appt-arrow">
-                <ArrowRight
-                  width="16px"
-                  height="16px"
-                  weight="bold"
-                  fill="#fff"
-                />
-              </div>
-            </button>
-          </div>
+        <div className="hero-text-wrapper">
+          <h1 className="hero-text">
+            Driven by Trust.
+            <br />
+            Powered by Precision.
+          </h1>
         </div>
       </div>
     </section>

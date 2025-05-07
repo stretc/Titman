@@ -1,0 +1,192 @@
+.top-section {
+  max-width: 100%;
+}
+
+.hero-bg {
+  background: url("/public/opening-bg.png") no-repeat center center;
+  background-size: cover;
+  height: 900px;
+  padding-top: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  width: 80%;
+  position: sticky;
+  z-index: 100;
+  background-color: rgba(220, 220, 220, 0); /* transparent */
+}
+
+.navbar-top,
+.navbar-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo-phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background: url("/logo2.png") no-repeat center;
+  background-size: contain;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.info-title {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.info-text {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+}
+
+.address {
+  text-align: center;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background: #fff;
+  border: none;
+  width: 100%;
+}
+
+.navbar-bottom {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  gap: 0.5rem;
+}
+
+.divider-vertical {
+  width: 1px;
+  height: 30px;
+  background: white;
+}
+
+.veterans {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.flag {
+  width: 30px;
+  height: 30px;
+  background: url("/flag.png") no-repeat center;
+  background-size: contain;
+}
+
+.veterans-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hero-text-wrapper {
+  width: 80%;
+  margin-top: 50px;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+  margin-top: 126px;
+}
+
+@media (min-width: 1400px) {
+  .logo-phone {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .phone {
+    font-size: 25px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 0;
+  }
+
+  .info-title {
+    font-size: 20px;
+  }
+
+  .info-text {
+    font-size: 18px;
+  }
+
+  .tab {
+    font-size: 18px;
+  }
+
+  .veterans-text {
+    font-size: 18px;
+  }
+}
