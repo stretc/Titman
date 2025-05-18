@@ -83,7 +83,7 @@ export const TopSection = () => {
           <hr className="divider" />
 
           {/* Navbar Bottom */}
-          <div className="navbar-bottom">
+          <div className="navbar-bottom max-[725px]:">
             <div className="tabs">
               <a href="#services" className="tab" onClick={handleScroll}>
                 <Wrench size={30} className="icon" />
