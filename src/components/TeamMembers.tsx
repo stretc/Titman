@@ -1,4 +1,5 @@
 import { CodesandboxLogo } from "@phosphor-icons/react";
+import "./styles/TeamMembers.css";
 
 export const TeamMembers = () => {
   return (
@@ -20,7 +21,7 @@ export const TeamMembers = () => {
                 </div>
               </div>
 
-              <div className="W-[640px] mb-[36px]">
+              <div className="W-[640px] mb-[100px]">
                 <h1 className="bg-[36px] mt-0 text-[#02133c]">
                   Our Hands Built This.
                   <br />
@@ -28,18 +29,13 @@ export const TeamMembers = () => {
                 </h1>
               </div>
 
-              <div className="mb-[40px]">
-                <div className="font-[Montserrat] leading-[25px] text-[21px] tracking-[2px]">
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                  consequatur. Quis autem vel eum iure reprehenderit qui in ea
-                  voluptate velit esse quam nihil molestiae consequatur, vel
-                  illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+              <div className="grid grid-cols-2 gap-4">
+                <div className="flex w-auto h-auto justify-center">
+                  <div className="team-members-img bg-[url('public/tommy.JPG')] bg-center bg-cover bg-no-repeat w-[846px] h-[420px] mt-0 z-10 shadow-2xl"></div>
                 </div>
-              </div>
-
-              <div className="flex w-auto h-auto justify-center">
-                <div className="bg-[url('https://uploads-ssl.webflow.com/6033b644793e4daa2b27e2e5/6033bf6f8f1a9c5980412bcf_Image.png')] bg-center bg-cover bg-no-repeat w-[846px] h-[420px] mt-0 z-10 shadow-2xl"></div>
+                <div className="flex w-auto h-auto justify-center">
+                  <div className="team-members-img bg-[url('/public/tommy.JPG')] bg-no-repeat w-[846px] h-[420px] mt-0 z-10 shadow-2xl"></div>
+                </div>
               </div>
             </div>
           </div>

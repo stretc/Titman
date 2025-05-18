@@ -10,6 +10,22 @@ import {
 import "./styles/TopSection.css";
 
 export const TopSection = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    const href = e.currentTarget.getAttribute("href");
+    if (!href) return;
+
+    // Get the id from the href
+    const id = href.substring(1);
+
+    // Find the element by id
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <div className="top-section">
       <div className="hero-bg">
@@ -62,17 +78,17 @@ export const TopSection = () => {
           {/* Navbar Bottom */}
           <div className="navbar-bottom">
             <div className="tabs">
-              <a href="#services" className="tab">
+              <a href="#services" className="tab" onClick={handleScroll}>
                 <Wrench size={25} className="icon" />
                 <p className="underline-anim">Services</p>
               </a>
               <span className="divider-vertical" />
-              <a href="#promise" className="tab">
+              <a href="#promise" className="tab" onClick={handleScroll}>
                 <ShieldCheck size={25} className="icon" />
                 <p className="underline-anim">Our Promise</p>
               </a>
               <span className="divider-vertical" />
-              <a href="#team-members" className="tab">
+              <a href="#team-members" className="tab" onClick={handleScroll}>
                 <UsersFour size={25} className="icon" />
                 <p className="underline-anim">Team Members</p>
               </a>

@@ -1,0 +1,16 @@
+.promise-header {
+  margin-top: 0;
+  margin-bottom: 68px;
+}
+
+.promise-item {
+  display: flex;
+  width: 30%;
+  height: 155px;
+  padding: 10px;
+  justify-content: center;
+  align-items: stretch;
+  background-color: #fff;
+  padding-right: 2%;
+  align-content: center;
+}

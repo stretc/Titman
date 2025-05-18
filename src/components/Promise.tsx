@@ -1,4 +1,5 @@
 import { CodesandboxLogo } from "@phosphor-icons/react";
+import "./styles/Promise.css";
 
 export const Promise = () => {
   return (
