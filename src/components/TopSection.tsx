@@ -36,18 +36,24 @@ export const TopSection = () => {
               <a href="#">
                 <div className="logo" />
               </a>
-              <div className="phone">
-                <Phone size={30} className="icon" />
-                <a className="underline-anim" href="tel: +1 (620) 363-0432">
+              <a className="phone underline-anim" href="tel: +1 (620) 363-0432">
+                <Phone
+                  height={25}
+                  width={25}
+                  weight="bold"
+                  className="phone-icon max-[1500px]:h-[20px] max-[1500px]:w-[20px]"
+                />
+                <div className="underline-anim phone-text">
                   +1 (620) 363-0432
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
 
             <div className="info">
               <div className="hours">
                 <div className="info-title">
-                  <Clock size={22} className="icon" /> Hours:
+                  <Clock size={30} weight="bold" className="info-icon" />
+                  <p className="info-title-text">Hours:</p>
                 </div>
                 <div className="info-text">
                   Mon - Fri: 8:00am - 5:00pm
@@ -62,7 +68,8 @@ export const TopSection = () => {
                 target="_blank"
               >
                 <div className="info-title">
-                  <MapPin size={22} className="icon" /> Address:
+                  <MapPin size={30} weight="bold" className="info-icon" />
+                  <p className="info-title-text">Address:</p>
                 </div>
                 <div className="info-text">
                   408 N. Maple
@@ -79,25 +86,19 @@ export const TopSection = () => {
           <div className="navbar-bottom">
             <div className="tabs">
               <a href="#services" className="tab" onClick={handleScroll}>
-                <Wrench size={25} className="icon" />
-                <p className="underline-anim">Services</p>
+                <Wrench size={30} className="icon" />
+                <p className="underline-anim tab-text">Services</p>
               </a>
               <span className="divider-vertical" />
               <a href="#promise" className="tab" onClick={handleScroll}>
-                <ShieldCheck size={25} className="icon" />
-                <p className="underline-anim">Our Promise</p>
+                <ShieldCheck size={30} className="icon" />
+                <p className="underline-anim tab-text">Our Promise</p>
               </a>
               <span className="divider-vertical" />
               <a href="#team-members" className="tab" onClick={handleScroll}>
-                <UsersFour size={25} className="icon" />
-                <p className="underline-anim">Team Members</p>
+                <UsersFour size={30} className="icon" />
+                <p className="underline-anim tab-text">Team Members</p>
               </a>
-            </div>
-
-            <div className="veterans">
-              <div className="flag" />
-              <p className="veterans-text">We Honor Our Veterans</p>
-              <Info size={25} fill="#fff" className="icon pointer" />
             </div>
           </div>
         </div>
@@ -109,6 +110,11 @@ export const TopSection = () => {
             <br />
             Powered by Precision.
           </h1>
+          <div className="veterans">
+            <div className="flag" />
+            <p className="veterans-text tab-text-vet">We Honor Our Veterans</p>
+            <Info fill="#fff" weight="bold" className="i-icon pointer" />
+          </div>
         </div>
       </div>
     </div>
