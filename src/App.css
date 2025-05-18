@@ -38,41 +38,6 @@
 
 /* Animation Components End */
 
-.shield {
-  background: url("../src/images/shield.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.hero-text {
-  margin-top: 126px;
-  margin-bottom: 0px;
-  font-family: "Lato", sans-serif;
-  color: #fff;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: 800;
-}
-
-.hero-btns button {
-  position: relative;
-  display: flex;
-  width: 211px;
-  height: 40px;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 15px;
-  align-items: center;
-  font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  cursor: pointer;
-  color: #fff;
-  line-height: 24px;
-  background-color: #c40b0b;
-  font-size: 12px;
-}
-
 .appt-arrow {
   position: absolute;
   left: auto;
@@ -91,77 +56,4 @@
   background-repeat: no-repeat;
 }
 
-.promise-header {
-  margin-top: 0;
-  margin-bottom: 68px;
-}
 
-.promise-item {
-  display: flex;
-  width: 30%;
-  height: 155px;
-  padding: 10px;
-  justify-content: center;
-  align-items: stretch;
-  background-color: #fff;
-  padding-right: 2%;
-  align-content: center;
-}
-
-.our-story-img {
-  background-image: url("https://uploads-ssl.webflow.com/6033b644793e4daa2b27e2e5/6033bf6f8f1a9c5980412bcf_Image.png");
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* XL */
-@media screen and (max-width: 1400px) {
-  .top-section-container,
-  .top-section-container p,
-  .top-section-container a,
-  .top-section-container h1,
-  .top-section-container button {
-    font-size: 0.875rem !important;
-  }
-
-  .top-section-container h1.hero-text {
-    font-size: 2.5rem !important; /* 40px */
-    line-height: 2.75rem !important;
-  }
-
-  .icons {
-    height: 20px;
-    width: 20px;
-  }
-
-  .imgs {
-    height: 25px;
-    width: 25px;
-  }
-}
-
-/* LG */
-@media screen and (max-width: 1024px) {
-  .logo {
-    width: 100px;
-    height: 100px;
-  }
-
-  .top-section-container,
-  .top-section-container p,
-  .top-section-container a,
-  .top-section-container h1,
-  .top-section-container button {
-    font-size: 0.75rem !important;
-  }
-
-  .top-text {
-    display: none !important;
-  }
-
-  .top-section-container h1.hero-text {
-    font-size: 2.5rem !important; /* 40px */
-    line-height: 2.75rem !important;
-  }
-}

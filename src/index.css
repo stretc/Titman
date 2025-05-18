@@ -2,6 +2,9 @@
 
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   font-family: "Montserrat", Avenir, Helvetica, Arial, sans-serif;
