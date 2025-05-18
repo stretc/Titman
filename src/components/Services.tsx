@@ -3,7 +3,7 @@ import "./styles/Services.css";
 
 export const Services = () => {
   return (
-    <section>
+    <div>
       <div className="relative flex h-[1200px] pt-[110px] pr-[50px] pl-[50px] flex-col justify-start items-center bg-[#e9e9e9] overflow-hidden">
         <div className="absolute inset-0 bg-[url('/public/gears.jpg')] bg-cover bg-center opacity-40 z-0"></div>
         <div className="relative z-10 w-auto h-full">
@@ -115,6 +115,6 @@ export const Services = () => {
           */}
         </div>
       </div>
-    </section>
+    </div>
   );
 };

@@ -11,7 +11,7 @@ import "./styles/TopSection.css";
 
 export const TopSection = () => {
   return (
-    <section className="top-section">
+    <div className="top-section">
       <div className="hero-bg">
         {/* Navbar Top */}
         <div className="navbar">
@@ -62,17 +62,17 @@ export const TopSection = () => {
           {/* Navbar Bottom */}
           <div className="navbar-bottom">
             <div className="tabs">
-              <a href="#" className="tab">
+              <a href="#services" className="tab">
                 <Wrench size={25} className="icon" />
                 <p className="underline-anim">Services</p>
               </a>
               <span className="divider-vertical" />
-              <a href="#" className="tab">
+              <a href="#promise" className="tab">
                 <ShieldCheck size={25} className="icon" />
                 <p className="underline-anim">Our Promise</p>
               </a>
               <span className="divider-vertical" />
-              <a href="#" className="tab">
+              <a href="#team-members" className="tab">
                 <UsersFour size={25} className="icon" />
                 <p className="underline-anim">Team Members</p>
               </a>
@@ -95,6 +95,6 @@ export const TopSection = () => {
           </h1>
         </div>
       </div>
-    </section>
+    </div>
   );
 };

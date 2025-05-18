@@ -2,7 +2,7 @@ import { CodesandboxLogo } from "@phosphor-icons/react";
 
 export const TeamMembers = () => {
   return (
-    <section>
+    <div>
       <div className="flex h-[900px] flex-col justify-center items-center bg-[#f5f5f5]">
         <div className="relative mt-[-250px] flex w-[71%] h-[720px] pt-[100px] flex-col justify-start items-center bg-[#fff] shadow-2xl">
           <div className="bg-[url('/public/gears.jpg')] bg-center bg-cover bg-no-repeat opacity-20 absolute left-0 top-0 right-auto bottom-auto z-1 w-full h-full shadow-2xl pointer-events-none"></div>
@@ -45,6 +45,6 @@ export const TeamMembers = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
