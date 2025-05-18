@@ -1,4 +1,5 @@
 import { CodesandboxLogo } from "@phosphor-icons/react";
+import "./styles/Services.css";
 
 export const Services = () => {
   return (
@@ -25,41 +26,38 @@ export const Services = () => {
 
           {/* Services Cards */}
           <div className="service-cards grid">
-            <div className="inspection-div grid-item">
+            <div className="oil-change-div grid-item">
               <div className="grid-item-container">
-                <div className="inspection-image grid-item-image"></div>
+                <div className="oil-change-image grid-item-image"></div>
                 <div className="mb-[20px]">
-                  <div className="grid-item-title">Multi Point Inspections</div>
+                  <div className="grid-item-title">Oil Change</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Fast, professional oil change with premium oil included.
                 </div>
               </div>
             </div>
 
-            <div className="auto-repair-div grid-item">
+            <div className="inpection-div grid-item">
               <div className="grid-item-container">
-                <div className="auto-repair-image grid-item-image"></div>
+                <div className="inpection-image grid-item-image"></div>
                 <div className="mb-[20px]">
-                  <div className="grid-item-title">Auto Repair</div>
+                  <div className="grid-item-title">Multi-Point Inspections</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Comprehensive inspections to ensure vehicle safety.
                 </div>
               </div>
             </div>
 
-            <div className="auto-maintenance-div grid-item">
+            <div className="batteries-div grid-item">
               <div className="grid-item-container">
-                <div className="auto-maintenance-image grid-item-image"></div>
+                <div className="batteries-image grid-item-image"></div>
                 <div className="mb-[20px]">
-                  <div className="grid-item-title">Auto Maintenance</div>
+                  <div className="grid-item-title">Batteries</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Battery testing and replacement to keep you powered.
                 </div>
               </div>
             </div>
@@ -71,8 +69,7 @@ export const Services = () => {
                   <div className="grid-item-title">Tires</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Tire inspection, rotation, and replacement for safe driving.
                 </div>
               </div>
             </div>
@@ -84,27 +81,26 @@ export const Services = () => {
                   <div className="grid-item-title">Braking System</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Brake inspection and service for reliable stopping power.
                 </div>
               </div>
             </div>
 
-            <div className="detailing-div grid-item">
+            <div className="auto-repair-div grid-item">
               <div className="grid-item-container">
-                <div className="detailing-image grid-item-image"></div>
+                <div className="auto-repair-image grid-item-image"></div>
                 <div className="mb-[20px]">
-                  <div className="grid-item-title">Detailing</div>
+                  <div className="grid-item-title">Light Mechanics</div>
                 </div>
                 <div className="grid-item-description">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Minor mechanical repairs to maintain vehicle performance.
                 </div>
               </div>
             </div>
           </div>
 
           {/* Learn More */}
+          {/* 
           <div className="flex w-auto mt-[66px] justify-center items-center">
             <div className="relative bg-[#c40b0b]">
               <div className="absolute left-auto top-0 right-0 bottom-auto z-1 w-[43px] h-[48px] bg-[url('/public/arrow-bg.png')] bg-[90% 90%]"></div>
@@ -116,6 +112,7 @@ export const Services = () => {
               </a>
             </div>
           </div>
+          */}
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
 }
 
 .hero-bg {
-  background: url("/public/opening-bg.png") no-repeat center center;
+  background: url("/public/opening-bg.png") no-repeat 40% 35%;
   background-size: cover;
   height: 900px;
   padding-top: 26px;

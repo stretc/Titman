@@ -40,7 +40,11 @@ export const TopSection = () => {
                 </div>
               </div>
 
-              <a className="address underline-anim">
+              <a
+                className="address underline-anim"
+                href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
+                target="_blank"
+              >
                 <div className="info-title">
                   <MapPin size={22} className="icon" /> Address:
                 </div>

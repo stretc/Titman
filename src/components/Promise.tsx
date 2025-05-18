@@ -32,8 +32,8 @@ export const Promise = () => {
                   Quality Service. Every time.
                 </div>
                 <div className="font-[Montserrat] text-[$4b4b4b] font-[500] text-[14px] text-center">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Expert care you can trust to keep your vehicle safe, reliable,
+                  and running smoothly for miles to come.
                 </div>
               </div>
             </div>
@@ -45,8 +45,8 @@ export const Promise = () => {
                   Certifed Professional Services
                 </div>
                 <div className="font-[Montserrat] text-[$4b4b4b] font-[500] text-[14px] text-center">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Our certified technicians use the latest tools and techniques
+                  to deliver reliable, high-quality repairs every time.
                 </div>
               </div>
             </div>
@@ -58,8 +58,8 @@ export const Promise = () => {
                   Real People. Honest Work.
                 </div>
                 <div className="font-[Montserrat] text-[$4b4b4b] font-[500] text-[14px] text-center">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium corrupti quos dolores et quas.
+                  Friendly, experienced professionals committed to transparent
+                  service and quality repairs you can always trust.
                 </div>
               </div>
             </div>
