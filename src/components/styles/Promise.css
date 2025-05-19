@@ -1,6 +1,7 @@
 .promise-header {
   margin-top: 0;
   margin-bottom: 68px;
+  font-size: clamp(24px, 5vw, 40px);
 }
 
 .promise-item {
@@ -13,4 +14,39 @@
   background-color: #fff;
   padding-right: 2%;
   align-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .promise-item-text {
+    font-size: 12px;
+  }
+
+  .promise-item {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .promise-img {
+    height: 900px;
+  }
+
+  .promise-grid {
+    flex-direction: column;
+    align-items: center; /* optional: center items horizontally */
+  }
+
+  .promise-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .promise-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
