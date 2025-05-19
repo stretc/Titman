@@ -129,22 +129,6 @@ export const TopSection = () => {
               />
             </div>
           </div>
-
-          <div className="inactive mr-[50px]">
-            <div className="">
-              <div className="hero-hours flex items-center justify-center">
-                <Clock size={30} weight="bold" className="hero-icon m-[5px]" />
-                <p className="hero-hours-text">Hours:</p>
-              </div>
-              <div className="">
-                <div className="hero-hours-time text-center">
-                  Mon - Fri: 8:00am - 5:00pm
-                  <br />
-                  Sat: 9:00am - 1:00pm
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
