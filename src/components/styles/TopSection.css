@@ -385,5 +385,9 @@
   .hero-btns button {
     width: 80%;
   }
+
+  .hero-bg {
+    height: 700px;
+  }
 }
 
