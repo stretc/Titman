@@ -85,35 +85,65 @@ export const TopSection = () => {
           {/* Navbar Bottom */}
           <div className="navbar-bottom max-[725px]:">
             <div className="tabs">
-              <a href="#services" className="tab" onClick={handleScroll}>
-                <Wrench size={30} className="icon" />
-                <p className="underline-anim tab-text">Services</p>
-              </a>
+              <div className="underline-anim">
+                <a href="#services" className="tab" onClick={handleScroll}>
+                  <Wrench size={30} className="icon" />
+                  <p className="tab-text">Services</p>
+                </a>
+              </div>
               <span className="divider-vertical" />
-              <a href="#promise" className="tab" onClick={handleScroll}>
-                <ShieldCheck size={30} className="icon" />
-                <p className="underline-anim tab-text">Our Promise</p>
-              </a>
-              <span className="divider-vertical" />
-              <a href="#team-members" className="tab" onClick={handleScroll}>
-                <UsersFour size={30} className="icon" />
-                <p className="underline-anim tab-text">Team Members</p>
-              </a>
+              <div className="underline-anim">
+                <a href="#promise" className="tab" onClick={handleScroll}>
+                  <ShieldCheck size={30} className="icon" />
+                  <p className="tab-text">Our Promise</p>
+                </a>
+              </div>
+              <span className="divider-vertical visible max-[490px]:hidden" />
+              <div className="underline-anim">
+                <a href="#team-members" className="tab" onClick={handleScroll}>
+                  <UsersFour size={30} className="icon" />
+                  <p className="tab-text">Team Members</p>
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Hero Section */}
-        <div className="hero-text-wrapper">
-          <h1 className="hero-text">
-            Driven by Trust.
-            <br />
-            Powered by Precision.
-          </h1>
-          <div className="veterans">
-            <div className="flag" />
-            <p className="veterans-text tab-text-vet">We Honor Our Veterans</p>
-            <Info fill="#fff" weight="bold" className="i-icon pointer" />
+        <div className="hero-text-wrapper flex flex-row items-center justify-between">
+          <div className="">
+            <h1 className="hero-text">
+              Driven by Trust.
+              <br />
+              Powered by Precision.
+            </h1>
+            <div className="veterans">
+              <div className="flag" />
+              <p className="veterans-text tab-text-vet">
+                We Honor Our Veterans
+              </p>
+              <Info
+                fill="#fff"
+                weight="bold"
+                className="i-icon pointer hover:bg-[#535353] rounded-full"
+              />
+            </div>
+          </div>
+
+          <div className="inactive mr-[50px]">
+            <div className="">
+              <div className="hero-hours flex items-center justify-center">
+                <Clock size={30} weight="bold" className="hero-icon m-[5px]" />
+                <p className="hero-hours-text">Hours:</p>
+              </div>
+              <div className="">
+                <div className="hero-hours-time text-center">
+                  Mon - Fri: 8:00am - 5:00pm
+                  <br />
+                  Sat: 9:00am - 1:00pm
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

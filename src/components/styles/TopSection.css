@@ -19,6 +19,12 @@
   background-repeat: no-repeat;
 }
 
+.hero-hours, .hero-hours-text, .hero-hours-time {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .hero-text {
   margin-top: 126px;
   margin-bottom: 0px;
@@ -45,6 +51,10 @@
   line-height: 24px;
   background-color: #c40b0b;
   font-size: 12px;
+}
+
+.inactive {
+  visibility: hidden;
 }
 
 .navbar {
@@ -275,6 +285,10 @@
     line-height: 48px;
     text-align: center;
   }
+
+  .veterans {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -303,14 +317,9 @@
   .phone-text {
     display: none;
   }
-
-  span {
-    display: none;
-  }
 }
 
 @media (max-width: 600px) {
-
   .navbar-top {
     display: flex;
     flex-wrap: wrap;
@@ -339,11 +348,6 @@
     align-items: center;
     gap: 0.75rem;
     width: auto;
-  }
-
-
-  .divider-vertical {
-    display: none;
   }
 
   .navbar-bottom {

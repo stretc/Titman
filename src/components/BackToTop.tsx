@@ -24,10 +24,10 @@ export const BackToTop = () => {
 
   return (
     <div
-      className={`z-1000 fixed bg-[#fff] p-[10px] rounded-full bottom-[150px] shadow-xl cursor-pointer transition-transform duration-300
+      className={`z-1000 fixed bg-[#fff] p-[10px] rounded-full bottom-[50px] shadow-xl cursor-pointer transition-transform duration-300
         ${
           visible
-            ? "left-[150px] translate-x-0"
+            ? "left-[50px] translate-x-0"
             : "left-[-100px] translate-x-[-100%]"
         }
         hover:scale-110 hover:duration-300 hover:ease-in-out`}
