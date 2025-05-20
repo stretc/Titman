@@ -1,11 +1,11 @@
-import { CodesandboxLogo } from "@phosphor-icons/react";
+import { ArrowLeft, ArrowRight, CodesandboxLogo } from "@phosphor-icons/react";
 import "./styles/TeamMembers.css";
 
 export const TeamMembers = () => {
   return (
     <div>
-      <div className="flex h-[900px] flex-col justify-center items-center bg-[#f5f5f5]">
-        <div className="relative mt-[-250px] flex w-[71%] h-[720px] pt-[100px] flex-col justify-start items-center bg-[#fff] shadow-2xl">
+      <div className="team-members-wrapper flex h-[1000px] flex-col justify-center items-center bg-[#f5f5f5]">
+        <div className="team-members-container relative mt-[-350px] flex w-[71%] h-[720px] pt-[100px] flex-col justify-start items-center bg-[#fff] shadow-2xl">
           <div className="absolute inset-0 opacity-20 bg-[url('/gears.jpg')] bg-center bg-cover bg-no-repeat z-0 pointer-events-none"></div>
 
           <div className="relative flex w-full h-[620px] pt-0 flex-col items-center">
@@ -21,7 +21,7 @@ export const TeamMembers = () => {
                 </div>
               </div>
 
-              <div className="team-heading w-[640px] mb-[100px]">
+              <div className="team-heading w-full mb-[100px] flex justify-center text-center">
                 <h1 className="bg-[36px] mt-0 text-[#02133c]">
                   Our Hands Built This.
                   <br />
@@ -29,9 +29,13 @@ export const TeamMembers = () => {
                 </h1>
               </div>
 
-              <div className="flex flex-row justify-center items-center">
+              <div className="flex justify-between items-center">
                 <div className="">
-                  <div className="tommy-member team-members-img min-w-[150px] min-h-[150px] w-[856px] h-[600px]"></div>
+                  <div className="tommy-member team-members-img min-w-[175px] min-h-[175px] w-[clamp(175px,50vw,556px)] h-[clamp(175px,50vh,500px)]"></div>
+                </div>
+
+                <div className="">
+                  <div className="tommy-member team-members-img min-w-[175px] min-h-[175px] w-[clamp(175px,50vw,556px)] h-[clamp(175px,50vh,500px)]"></div>
                 </div>
               </div>
             </div>
