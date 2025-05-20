@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CodesandboxLogo } from "@phosphor-icons/react";
+import { CodesandboxLogo } from "@phosphor-icons/react";
 import "./styles/TeamMembers.css";
 
 export const TeamMembers = () => {
