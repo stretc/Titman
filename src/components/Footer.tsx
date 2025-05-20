@@ -10,12 +10,28 @@ import {
 } from "@phosphor-icons/react";
 
 export const Footer = () => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+
+    const href = e.currentTarget.getAttribute("href");
+    if (!href) return;
+
+    // Get the id from the href
+    const id = href.substring(1);
+
+    // Find the element by id
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  };
+
   return (
     <footer className="bg-[#02133c] text-white">
       <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row justify-between items-start gap-8">
         {/* Logo Section */}
         <div className="flex flex-col items-center">
-          <a href="#">
+          <a href="#top" onClick={handleScroll}>
             <div className="w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
           </a>
           <p className="mt-2 text-sm text-gray-300">
@@ -33,7 +49,8 @@ export const Footer = () => {
             <div className="flex flex-col space-y-5">
               <a
                 className="flex items-center cursor-pointer footer-link"
-                href="#"
+                href="#top"
+                onClick={handleScroll}
               >
                 <House
                   size={20}
@@ -43,7 +60,8 @@ export const Footer = () => {
               </a>
               <a
                 className="flex items-center cursor-pointer footer-link"
-                href="#"
+                href="#services"
+                onClick={handleScroll}
               >
                 <Wrench
                   size={20}
@@ -53,7 +71,8 @@ export const Footer = () => {
               </a>
               <a
                 className="flex items-center cursor-pointer footer-link"
-                href="#"
+                href="#promise"
+                onClick={handleScroll}
               >
                 <ShieldCheck
                   size={20}
@@ -63,7 +82,8 @@ export const Footer = () => {
               </a>
               <a
                 className="flex items-center cursor-pointer footer-link"
-                href="#"
+                href="#team-members"
+                onClick={handleScroll}
               >
                 <UsersFour
                   size={20}
@@ -85,11 +105,17 @@ export const Footer = () => {
             <Envelope size={20} style={{ fill: "#fff", marginRight: "25px" }} />
             <span className="underline-anim text-m">email@example.com</span>
           </a>
-          <a className="flex items-center cursor-pointer footer-link">
+          <a
+            className="flex items-center cursor-pointer footer-link"
+            href="tel: +1 (620) 363-0432"
+          >
             <Phone size={20} style={{ fill: "#fff", marginRight: "25px" }} />
-            <span className="underline-anim text-m">+1 (555) 123-4567</span>
+            <span className="underline-anim text-m">+1 (620) 363-0432</span>
           </a>
-          <a className="flex items-center cursor-pointer footer-link" href="#">
+          <a
+            className="flex items-center cursor-pointer footer-link"
+            href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
+          >
             <MapPin size={20} style={{ fill: "#fff", marginRight: "25px" }} />
             <span className="underline-anim text-m">
               408 N. Maple St,
@@ -100,7 +126,6 @@ export const Footer = () => {
           <div className="flex items-center">
             <Clock size={20} style={{ fill: "#fff", marginRight: "25px" }} />
             <div className="flex flex-col items-center">
-              <p className="text-m">Hours:</p>
               <p className="text-m">Mon - Fri: 8 am - 5 pm</p>
               <p className="text-m">Sat: 9 am - 1 pm</p>
             </div>

@@ -21,7 +21,9 @@ export const Services = () => {
           </div>
 
           <div className="mb-[50px]">
-            <h1 className="services-header text-[#02133c]">What We Do Best</h1>
+            <h1 className="services-header text-[#02133c] text-center">
+              What We Do Best
+            </h1>
           </div>
 
           {/* Services Cards */}
