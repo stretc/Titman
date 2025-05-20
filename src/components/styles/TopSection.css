@@ -5,7 +5,7 @@
 .hero-bg {
   background: url("/public/opening-bg.png") no-repeat 40% 35%;
   background-size: cover;
-  height: 900px;
+  height: 1000px;
   padding-top: 26px;
   display: flex;
   flex-direction: column;
