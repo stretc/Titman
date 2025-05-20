@@ -1,5 +1,6 @@
 import {
   Clock,
+  Gear,
   Info,
   MapPin,
   Phone,
@@ -53,9 +54,9 @@ export const TopSection = () => {
               <div className="hours">
                 <div className="info-title">
                   <Clock size={30} weight="bold" className="info-icon" />
-                  <p className="info-title-text">Hours:</p>
+                  <p className="info-title-text-hours">Hours:</p>
                 </div>
-                <div className="info-text">
+                <div className="info-text-hours text-center">
                   Mon - Fri: 8:00am - 5:00pm
                   <br />
                   Sat: 9:00am - 1:00pm
@@ -83,22 +84,33 @@ export const TopSection = () => {
           <hr className="divider" />
 
           {/* Navbar Bottom */}
-          <div className="navbar-bottom max-[725px]:">
-            <div className="tabs">
+          <div className="navbar-bottom max-[325px]:">
+            <div className="tabs flex justify-between">
               <div className="underline-anim">
                 <a href="#services" className="tab" onClick={handleScroll}>
                   <Wrench size={30} className="icon" />
                   <p className="tab-text">Services</p>
                 </a>
               </div>
-              <span className="divider-vertical" />
+              <div className="divider-vertical w-[1px] h-[30px] bg-[#fff]" />
+              <div className="underline-anim">
+                <a href="#services" className="tab" onClick={handleScroll}>
+                  <Gear size={30} className="icon" />
+                  <p className="tab-text">Side By Sides</p>
+                </a>
+              </div>
+
+              <div className="divider-vertical max-[490px]:hidden" />
+
               <div className="underline-anim">
                 <a href="#promise" className="tab" onClick={handleScroll}>
                   <ShieldCheck size={30} className="icon" />
                   <p className="tab-text">Our Promise</p>
                 </a>
               </div>
-              <span className="divider-vertical visible max-[490px]:hidden" />
+
+              <div className="divider-vertical max-[600px]:hidden" />
+
               <div className="underline-anim">
                 <a href="#team-members" className="tab" onClick={handleScroll}>
                   <UsersFour size={30} className="icon" />

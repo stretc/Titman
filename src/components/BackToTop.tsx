@@ -23,8 +23,10 @@ export const BackToTop = () => {
   };
 
   return (
-    <div
-      className={`z-1000 fixed bg-[#fff] p-[10px] rounded-full bottom-[50px] shadow-xl cursor-pointer transition-transform duration-300
+    <a
+      href="#top"
+      onClick={scrollToTop}
+      className={`back-to-top z-1000 fixed bg-[#fff] p-[10px] rounded-full bottom-[50px] shadow-xl cursor-pointer transition-transform duration-300
         ${
           visible
             ? "left-[50px] translate-x-0"
@@ -32,9 +34,7 @@ export const BackToTop = () => {
         }
         hover:scale-110 hover:duration-300 hover:ease-in-out`}
     >
-      <a href="#top" onClick={scrollToTop} className="back-to-top">
-        <ArrowUp size={32} weight="bold" fill="#000" />
-      </a>
-    </div>
+      <ArrowUp size={32} weight="bold" fill="#000" />
+    </a>
   );
 };
