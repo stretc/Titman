@@ -64,6 +64,21 @@ export const TopSection = () => {
               </div>
 
               <a
+                className="phone-right underline-anim"
+                href="tel: +1 (620) 363-0432"
+              >
+                <Phone
+                  height={25}
+                  width={25}
+                  weight="bold"
+                  className="phone-icon max-[1500px]:h-[20px] max-[1500px]:w-[20px]"
+                />
+                <div className="underline-anim phone-text">
+                  +1 (620) 363-0432
+                </div>
+              </a>
+
+              <a
                 className="address underline-anim"
                 href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
                 target="_blank"
