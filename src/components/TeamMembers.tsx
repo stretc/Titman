@@ -22,21 +22,16 @@ export const TeamMembers = () => {
               </div>
 
               <div className="team-heading w-full mb-[100px] flex justify-center text-center">
-                <h1 className="bg-[36px] mt-0 text-[#02133c]">
+                <h1 className="text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[36px] font-bold text-[#02133c] mt-0">
                   Our Hands Built This.
                   <br />
                   Our Hearts Keep It Running.
                 </h1>
               </div>
 
-              <div className="flex justify-between items-center">
-                <div className="">
-                  <div className="tommy-member team-members-img min-w-[175px] min-h-[175px] w-[clamp(175px,50vw,556px)] h-[clamp(175px,50vh,500px)]"></div>
-                </div>
-
-                <div className="">
-                  <div className="tommy-member team-members-img min-w-[175px] min-h-[175px] w-[clamp(175px,50vw,556px)] h-[clamp(175px,50vh,500px)]"></div>
-                </div>
+              <div className="team-images-wrapper">
+                <div className="tommy-member team-members-img"></div>
+                <div className="tommy-member team-members-img"></div>
               </div>
             </div>
           </div>
