@@ -8,18 +8,14 @@ import {
   UsersFour,
   Wrench,
 } from "@phosphor-icons/react";
+import "./styles/Footer.css"; // ← Import the custom CSS
 
 export const Footer = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-
     const href = e.currentTarget.getAttribute("href");
     if (!href) return;
-
-    // Get the id from the href
     const id = href.substring(1);
-
-    // Find the element by id
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -27,107 +23,72 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#02133c] text-white">
-      <div className="max-w-7xl mx-auto px-4 py-20 flex flex-col md:flex-row justify-between items-start gap-8">
+    <footer className="footer">
+      <div className="footer-container">
         {/* Logo Section */}
-        <div className="flex flex-col items-center">
+        <div className="footer-section logo-section">
           <a href="#top" onClick={handleScroll}>
-            <div className="w-[150px] h-[150px] bg-[url('/logo2.png')] bg-center bg-contain bg-no-repeat"></div>
+            <div className="footer-logo"></div>
           </a>
-          <p className="mt-2 text-sm text-gray-300">
-            Making you a better vehicle.
-          </p>
+          <p className="footer-text">Making you a better vehicle.</p>
         </div>
 
-        {/* Navigation Links */}
-        <div className="flex flex-col space-y-5">
-          <h3 className="font-semibold text-lg flex w-full items-center justify-center">
-            Navigation
-          </h3>
-          <hr className="w-full h-[1px] bg-gray-300" />
-          <div className="flex">
-            <div className="flex flex-col space-y-5">
-              <a
-                className="flex items-center cursor-pointer footer-link"
-                href="#top"
-                onClick={handleScroll}
-              >
-                <House
-                  size={20}
-                  style={{ fill: "#fff", marginRight: "25px" }}
-                />
-                <span className="underline-anim text-m">Home</span>
+        <div className="footer-wrapper flex justify-between">
+          {/* Navigation */}
+          <div className="footer-section">
+            <h3 className="footer-title">Navigation</h3>
+            <hr className="footer-divider" />
+            <div className="footer-links">
+              <a href="#top" onClick={handleScroll}>
+                <House className="footer-icon" />
+                <span className="ml-[12px]">Home</span>
               </a>
-              <a
-                className="flex items-center cursor-pointer footer-link"
-                href="#services"
-                onClick={handleScroll}
-              >
-                <Wrench
-                  size={20}
-                  style={{ fill: "#fff", marginRight: "25px" }}
-                />
-                <span className="underline-anim text-m">Services</span>
+              <a href="#services" onClick={handleScroll}>
+                <Wrench className="footer-icon" />
+                <span className="ml-[12px]">Services</span>
               </a>
-              <a
-                className="flex items-center cursor-pointer footer-link"
-                href="#promise"
-                onClick={handleScroll}
-              >
-                <ShieldCheck
-                  size={20}
-                  style={{ fill: "#fff", marginRight: "25px" }}
-                />
-                <span className="underline-anim text-m">Our Promise</span>
+              <a href="#promise" onClick={handleScroll}>
+                <ShieldCheck className="footer-icon" />
+                <span className="ml-[12px]">Our Promise</span>
               </a>
-              <a
-                className="flex items-center cursor-pointer footer-link"
-                href="#team-members"
-                onClick={handleScroll}
-              >
-                <UsersFour
-                  size={20}
-                  style={{ fill: "#fff", marginRight: "25px" }}
-                />
-                <span className="underline-anim text-m">Team Members</span>
+              <a href="#team-members" onClick={handleScroll}>
+                <UsersFour className="footer-icon" />
+                <span className="ml-[12px]">Team Members</span>
               </a>
             </div>
           </div>
-        </div>
 
-        {/* Contact Info */}
-        <div className="flex flex-col space-y-5">
-          <h3 className="font-semibold text-lg flex w-full items-center justify-center">
-            Contact Us
-          </h3>
-          <hr className="w-full h-[1px] bg-gray-300" />
-          <a className="flex items-center cursor-pointer footer-link">
-            <Envelope size={20} style={{ fill: "#fff", marginRight: "25px" }} />
-            <span className="underline-anim text-m">email@example.com</span>
-          </a>
-          <a
-            className="flex items-center cursor-pointer footer-link"
-            href="tel: +1 (620) 363-0432"
-          >
-            <Phone size={20} style={{ fill: "#fff", marginRight: "25px" }} />
-            <span className="underline-anim text-m">+1 (620) 363-0432</span>
-          </a>
-          <a
-            className="flex items-center cursor-pointer footer-link"
-            href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
-          >
-            <MapPin size={20} style={{ fill: "#fff", marginRight: "25px" }} />
-            <span className="underline-anim text-m">
-              408 N. Maple St,
-              <br />
-              Garnett Ks 66032
-            </span>
-          </a>
-          <div className="flex items-center">
-            <Clock size={20} style={{ fill: "#fff", marginRight: "25px" }} />
-            <div className="flex flex-col items-center">
-              <p className="text-m">Mon - Fri: 8 am - 5 pm</p>
-              <p className="text-m">Sat: 9 am - 1 pm</p>
+          {/* Contact Info */}
+          <div className="footer-section">
+            <h3 className="footer-title">Contact Us</h3>
+            <hr className="footer-divider" />
+            <div className="footer-links">
+              <div>
+                <Envelope className="footer-icon" />
+                <span className="ml-[12px]">email@example.com</span>
+              </div>
+              <a href="tel:+1 (620) 363-0432">
+                <Phone className="footer-icon" />
+                <span className="ml-[12px]">+1 (620) 363-0432</span>
+              </a>
+              <a href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6">
+                <MapPin className="footer-icon" />
+                <span className="ml-[12px]">
+                  408 N. Maple St,
+                  <br />
+                  Garnett Ks 66032
+                </span>
+              </a>
+              <div className="flex items-start">
+                <Clock className="footer-icon" />
+                <div className="ml-[12px] flex flex-col">
+                  <span className="">
+                    Mon - Fri: 8 am - 5 pm
+                    <br />
+                    Sat: 9 am - 1 pm
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
