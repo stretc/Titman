@@ -1,5 +1,4 @@
 import {
-  Clock,
   Gear,
   Info,
   MapPin,
