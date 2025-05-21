@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
+
 import {
+  Clock,
   Gear,
   Info,
   MapPin,
@@ -25,6 +28,32 @@ export const TopSection = () => {
       element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
+
+  const [walkInStatus, setWalkInStatus] = useState("Walk-Ins Not Available");
+
+  const handleWalkInTime = () => {
+    const now = new Date();
+    const day = now.getDay();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+
+    const time = hours + minutes / 60;
+
+    if (day >= 1 && day <= 5 && time >= 8 && time < 17) {
+      return "Walk-Ins Available";
+    } else if (day === 6 && time >= 9 && time < 13) {
+      return "Walk-Ins Available";
+    } else {
+      return "Walk-Ins Unavailable";
+    }
+  };
+
+  useEffect(() => {
+    const status = handleWalkInTime();
+    setWalkInStatus(status);
+  }, []);
+
+  console.log(handleWalkInTime());
 
   return (
     <div className="top-section">
@@ -127,6 +156,45 @@ export const TopSection = () => {
                 weight="bold"
                 className="i-icon pointer hover:bg-[#535353] rounded-full"
               />
+            </div>
+          </div>
+
+          <div className="mr-[20px]">
+            <div className="inline-flex scale-100 items-center relative rounded-sm text-sm font-medium ring-offset-background transition-[transform,background-color] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-2 active:scale-95 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary hover:text-secondary-foreground h-auto justify-start px-4 py-3 pointer-events-none bg-secondary/50 text-secondary-foreground">
+              {/* Core Dot */}
+              <span
+                className={`relative inline-flex rounded-full h-3 w-3 ${
+                  walkInStatus === "Walk-Ins Available"
+                    ? "bg-green-500"
+                    : "bg-red-500"
+                }`}
+              ></span>
+
+              {/* Glowing Circle */}
+              <span
+                className={`absolute inline-flex rounded-full h-3 w-3 ${
+                  walkInStatus === "Walk-Ins Available"
+                    ? "bg-green-500 animate-glow-green-fade"
+                    : "bg-red-500 animate-glow-red-fade"
+                }`}
+              ></span>
+            </div>
+
+            <span className="ml-2 text-2xl text-white font-[500] font-[Montserrat]">
+              {walkInStatus}
+            </span>
+
+            <div className="flex items-center justify-center gap-5">
+              <Clock
+                size={30}
+                weight="bold"
+                className="info-icon"
+                fill="#fff"
+              />
+              <div className="text-[20px] text-[#fff] flex justify-center flex-col mt-[25px] text-center">
+                <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                <p>Sat: 9:00 AM - 1:00 PM</p>
+              </div>
             </div>
           </div>
         </div>

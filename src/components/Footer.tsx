@@ -82,7 +82,7 @@ export const Footer = () => {
               <div className="flex items-start">
                 <Clock className="footer-icon" />
                 <div className="ml-[12px] flex flex-col">
-                  <span className="">
+                  <span>
                     Mon - Fri: 8 am - 5 pm
                     <br />
                     Sat: 9 am - 1 pm
