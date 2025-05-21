@@ -37,36 +37,10 @@ export const TopSection = () => {
               <a href="#">
                 <div className="logo" />
               </a>
-              <a className="phone underline-anim" href="tel: +1 (620) 363-0432">
-                <Phone
-                  height={25}
-                  width={25}
-                  weight="bold"
-                  className="phone-icon max-[1500px]:h-[20px] max-[1500px]:w-[20px]"
-                />
-                <div className="underline-anim phone-text">
-                  +1 (620) 363-0432
-                </div>
-              </a>
             </div>
 
             <div className="info">
-              <div className="hours">
-                <div className="info-title">
-                  <Clock size={30} weight="bold" className="info-icon" />
-                  <p className="info-title-text-hours">Hours:</p>
-                </div>
-                <div className="info-text-hours text-center">
-                  Mon - Fri: 8:00am - 5:00pm
-                  <br />
-                  Sat: 9:00am - 1:00pm
-                </div>
-              </div>
-
-              <a
-                className="phone-right underline-anim"
-                href="tel: +1 (620) 363-0432"
-              >
+              <a className="phone underline-anim" href="tel: +1 (620) 363-0432">
                 <Phone
                   height={25}
                   width={25}

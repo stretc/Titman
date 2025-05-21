@@ -278,7 +278,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .info-text {
     display: none;
   }
@@ -335,14 +335,6 @@
 
   .hours {
     visibility: hidden;
-  }
-
-  .phone {
-    visibility: hidden;
-  }
-
-  .phone-right {
-    visibility: visible;
   }
 
   .tabs {
