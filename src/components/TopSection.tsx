@@ -110,14 +110,6 @@ export const TopSection = () => {
                 </a>
               </div>
               <div className="divider-vertical w-[1px] h-[30px] bg-[#fff]" />
-              <div className="underline-anim">
-                <a href="#services" className="tab" onClick={handleScroll}>
-                  <Gear size={30} className="icon" />
-                  <p className="tab-text">Side By Sides</p>
-                </a>
-              </div>
-
-              <div className="divider-vertical max-[490px]:hidden" />
 
               <div className="underline-anim">
                 <a href="#promise" className="tab" onClick={handleScroll}>
@@ -159,29 +151,9 @@ export const TopSection = () => {
             </div>
           </div>
 
-          <div className="mr-[20px]">
-            <div className="inline-flex scale-100 items-center relative rounded-sm text-sm font-medium ring-offset-background transition-[transform,background-color] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-primary focus-visible:ring-offset-2 active:scale-95 disabled:pointer-events-none disabled:opacity-50 hover:bg-secondary hover:text-secondary-foreground h-auto justify-start px-4 py-3 pointer-events-none bg-secondary/50 text-secondary-foreground">
-              {/* Core Dot */}
-              <span
-                className={`relative inline-flex rounded-full h-3 w-3 ${
-                  walkInStatus === "Walk-Ins Available"
-                    ? "bg-green-500"
-                    : "bg-red-500"
-                }`}
-              ></span>
-
-              {/* Glowing Circle */}
-              <span
-                className={`absolute inline-flex rounded-full h-3 w-3 ${
-                  walkInStatus === "Walk-Ins Available"
-                    ? "bg-green-500 animate-glow-green-fade"
-                    : "bg-red-500 animate-glow-red-fade"
-                }`}
-              ></span>
-            </div>
-
-            <span className="ml-2 text-2xl text-white font-[500] font-[Montserrat]">
-              {walkInStatus}
+          <div className="walk-ins mr-[35px] p-[25px] rounded-2xl items-center flex flex-col">
+            <span className="text-2xl text-white font-[500] font-[Montserrat]">
+              Walks-Ins Available
             </span>
 
             <div className="flex items-center justify-center gap-5">
