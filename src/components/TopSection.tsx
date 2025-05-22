@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react";
-
 import {
   Clock,
-  Gear,
   Info,
   MapPin,
   Phone,
@@ -28,32 +25,6 @@ export const TopSection = () => {
       element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
-
-  const [walkInStatus, setWalkInStatus] = useState("Walk-Ins Not Available");
-
-  const handleWalkInTime = () => {
-    const now = new Date();
-    const day = now.getDay();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-
-    const time = hours + minutes / 60;
-
-    if (day >= 1 && day <= 5 && time >= 8 && time < 17) {
-      return "Walk-Ins Available";
-    } else if (day === 6 && time >= 9 && time < 13) {
-      return "Walk-Ins Available";
-    } else {
-      return "Walk-Ins Unavailable";
-    }
-  };
-
-  useEffect(() => {
-    const status = handleWalkInTime();
-    setWalkInStatus(status);
-  }, []);
-
-  console.log(handleWalkInTime());
 
   return (
     <div className="top-section">
