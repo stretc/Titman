@@ -30,8 +30,42 @@ export const TeamMembers = () => {
               </div>
 
               <div className="team-images-wrapper">
-                <div className="tommy-member team-members-img"></div>
-                <div className="tommy-member team-members-img"></div>
+                <div className="tommy-member team-members-img">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                    <div className="flex justify-between">
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Chris Titman
+                      </h4>
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Owner/Operator
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="tommy-member team-members-img">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                    <div className="flex justify-between">
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Tommy Harris
+                      </h4>
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Mechanic
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="tommy-member team-members-img">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                    <div className="flex justify-between">
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Elijah Taylor
+                      </h4>
+                      <h4 className="line-clamp-2 text-[20px] font-[600] text-[#02133c]">
+                        Mechanic
+                      </h4>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

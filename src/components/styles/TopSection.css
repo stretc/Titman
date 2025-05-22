@@ -256,6 +256,29 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .hero-text {
+    font-size: 50px;
+  }
+
+  .walk-ins {
+    margin: 0;
+  }
+
+  .walk-ins span {
+    font-size: 16px;
+  }
+
+  .walk-ins div svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .walk-ins div div {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1045px) {
   .hero-text-wrapper {
     width: 100%;
@@ -273,6 +296,10 @@
 
   .veterans {
     justify-content: center;
+  }
+
+  .walk-ins {
+    margin-top: 25px;
   }
 }
 
@@ -397,6 +424,20 @@
 
   .hero-bg {
     height: 825px;
+  }
+
+  .walk-ins span {
+    font-size: 14px;
+  }
+
+  .walk-ins div svg {
+    height: 15px;
+    width: 15px;
+  }
+
+  .walk-ins div div {
+    font-size: 12px;
+    margin-top: 12px;
   }
 }
 

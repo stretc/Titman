@@ -3,8 +3,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 10;
-  width: 45%;
-  height: clamp(150px, 50vh, 500px);
+  width: 30%;
+  height: clamp(150px, 50vh, 375px);
   min-width: 150px;
   min-height: 150px;
   transition: all 0.3s ease;
@@ -12,6 +12,7 @@
 }
 
 .team-images-wrapper {
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   gap: 50px;

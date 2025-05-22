@@ -122,7 +122,7 @@ export const TopSection = () => {
             </div>
           </div>
 
-          <div className="walk-ins mr-[35px] p-[25px] rounded-2xl items-center flex flex-col">
+          <div className="walk-ins mr-[35px] p-[25px] rounded-lg items-center flex flex-col">
             <span className="text-2xl text-white font-[500] font-[Montserrat]">
               Walks-Ins Available
             </span>
