@@ -40,19 +40,19 @@ export const Footer = () => {
             <hr className="footer-divider" />
             <div className="footer-links">
               <a href="#top" onClick={handleScroll}>
-                <House className="footer-icon" />
+                <House height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">Home</span>
               </a>
               <a href="#services" onClick={handleScroll}>
-                <Wrench className="footer-icon" />
+                <Wrench height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">Services</span>
               </a>
               <a href="#promise" onClick={handleScroll}>
-                <ShieldCheck className="footer-icon" />
+                <ShieldCheck height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">Our Promise</span>
               </a>
               <a href="#team-members" onClick={handleScroll}>
-                <UsersFour className="footer-icon" />
+                <UsersFour height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">Team Members</span>
               </a>
             </div>
@@ -63,36 +63,23 @@ export const Footer = () => {
             <h3 className="footer-title">Contact Us</h3>
             <hr className="footer-divider" />
             <div className="footer-links">
-              <a className="cursor-pointer" href="#">
-                <Envelope className="footer-icon" />
-                <span className="ml-[12px] underline-anim">
-                  email@example.com
-                </span>
-              </a>
               <a href="tel:+1 (620) 363-0432">
-                <Phone className="footer-icon" />
+                <Phone height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">
                   +1 (620) 363-0432
                 </span>
               </a>
-              <a href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6">
-                <MapPin className="footer-icon" />
+              <a
+                href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
+                target="_blank"
+              >
+                <MapPin height={25} width={25} className="footer-icon" />
                 <span className="ml-[12px] underline-anim">
                   408 N. Maple St,
                   <br />
                   Garnett Ks 66032
                 </span>
               </a>
-              <div className="flex items-start">
-                <Clock className="footer-icon" />
-                <div className="ml-[12px] flex flex-col">
-                  <span>
-                    Mon - Fri: 8 am - 5 pm
-                    <br />
-                    Sat: 9 am - 1 pm
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

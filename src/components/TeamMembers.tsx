@@ -5,10 +5,10 @@ export const TeamMembers = () => {
   return (
     <div>
       <div className="team-members-wrapper flex h-[1000px] flex-col justify-center items-center bg-[#f5f5f5]">
-        <div className="team-members-container relative mt-[-350px] flex w-[71%] h-[720px] pt-[100px] flex-col justify-start items-center bg-[#fff] shadow-2xl">
+        <div className="team-members-container relative mt-[-350px] flex w-[71%] h-[720px] pt-[75px] flex-col justify-start items-center bg-[#fff] shadow-2xl">
           <div className="absolute inset-0 opacity-20 bg-[url('/gears.jpg')] bg-center bg-cover bg-no-repeat z-0 pointer-events-none"></div>
 
-          <div className="relative flex w-full h-[620px] pt-0 flex-col items-center">
+          <div className="back-team relative flex w-full h-[620px] pt-0 flex-col items-center">
             <div className="team-container w-[83%] h-full">
               <div className="team-heading mb-[33px] items-center flex">
                 <div className="w-[25px] h-[25px] mr-[16px]">
@@ -31,37 +31,28 @@ export const TeamMembers = () => {
 
               <div className="team-images-wrapper">
                 <div className="chris-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5">
                     <div className="team-member-info flex justify-between text-center">
                       <h4 className="line-clamp-2 font-[600] text-[#02133c]">
                         Chris Titman
-                      </h4>
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Owner Operator
                       </h4>
                     </div>
                   </div>
                 </div>
                 <div className="tommy-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5">
                     <div className="team-member-info flex justify-between">
                       <h4 className="line-clamp-2 font-[600] text-[#02133c]">
                         Tommy Harris
-                      </h4>
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Mechanic
                       </h4>
                     </div>
                   </div>
                 </div>
                 <div className="elijah-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15 bg-gradient-to-t from-white/80 to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15">
                     <div className="team-member-info flex justify-between">
                       <h4 className="line-clamp-2 font-[600] text-[#02133c]">
                         Elijah Taylor
-                      </h4>
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Mechanic
                       </h4>
                     </div>
                   </div>
