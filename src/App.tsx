@@ -1,4 +1,8 @@
 import "./App.css";
+import { useEffect, useState } from "react";
+import { Bouncy } from "ldrs/react";
+import "ldrs/react/Bouncy.css";
+
 import { Promise } from "./components/Promise";
 import { Services } from "./components/Services";
 import { TeamMembers } from "./components/TeamMembers";
@@ -7,6 +11,22 @@ import { Footer } from "./components/Footer";
 import { BackToTop } from "./components/BackToTop";
 
 function App() {
+  const [isAppReady, setIsAppReady] = useState(false);
+
+  useEffect(() => {
+    requestAnimationFrame(() => {
+      setIsAppReady(true);
+    });
+  }, []);
+
+  if (!isAppReady) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <Bouncy size="45" speed="1.75" color="black" />
+      </div>
+    );
+  }
+
   return (
     <>
       <BackToTop />
