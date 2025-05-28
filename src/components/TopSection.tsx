@@ -32,7 +32,7 @@ export const TopSection = () => {
         {/* Navbar Top */}
         <div className="navbar">
           <div className="navbar-top">
-            <div className="logo-phone">
+            <div className="logo-container">
               <a href="#">
                 <div className="logo" />
               </a>
@@ -122,19 +122,20 @@ export const TopSection = () => {
             </div>
           </div>
 
-          <div className="walk-ins mr-[35px] p-[25px] rounded-lg items-center flex flex-col">
-            <span className="text-2xl text-white font-[500] font-[Montserrat]">
-              Walks-Ins Welcomed!
-            </span>
+          <div className="walk-ins mr-[35px] p-[25px] rounded-lg items-center flex flex-row">
+            <Clock
+              size={30}
+              weight="bold"
+              className="info-icon mr-[15px]"
+              fill="#fff"
+            />
 
-            <div className="flex items-center justify-center gap-5">
-              <Clock
-                size={30}
-                weight="bold"
-                className="info-icon"
-                fill="#fff"
-              />
-              <div className="text-[20px] text-[#fff] flex justify-center flex-col mt-[25px] text-center">
+            <div className="flex flex-col items-center justify-center">
+              <span className="text-2xl text-white font-[500] font-[Montserrat]">
+                Walks-Ins Welcomed!
+              </span>
+
+              <div className="text-[20px] text-[#fff] flex justify-center flex-col text-center">
                 <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
                 <p>Sat: 9:00 AM - 1:00 PM</p>
               </div>

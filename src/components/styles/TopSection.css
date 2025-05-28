@@ -5,8 +5,7 @@
 .hero-bg {
   background: url("/public/opening-bg.png") no-repeat 40% 35%;
   background-size: cover;
-  height: 1000px;
-  padding-top: 15px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,7 @@
 
 .hero-text-wrapper {
   width: 80%;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .hero-text {
@@ -84,7 +83,21 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.logo-phone {
+.walk-ins span {
+  font-size: 16px;
+}
+
+.walk-ins div svg {
+  height: 20px;
+  width: 20px;
+}
+
+.walk-ins div div {
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+.logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -93,8 +106,8 @@
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 100px;
   background: url("/logo2.png") no-repeat center;
   background-size: contain;
 }
@@ -222,6 +235,8 @@
     flex-direction: row;
     align-items: center;
     gap: 2rem;
+    height: 25px;
+    width: 25px;
   }
 
   .logo {
@@ -230,7 +245,12 @@
   }
 
   .phone, .phone-right {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  .phone-icon {
+    height: 20px;
+    width: 20px;
   }
 
   .info {
@@ -239,24 +259,36 @@
     margin-top: 0;
   }
 
-  .info-title {
-    font-size: 16px;
+  .info-icon {
+    height: 20px;
+    width: 20px;
   }
 
-  .info-text {
+  .info-title {
     font-size: 14px;
   }
 
-  .tab {
-    font-size: 16px;
+  .info-text {
+    font-size: 12px;
+  }
+
+  .tab-text {
+    font-size: 14px;
+  }
+
+  .icon {
+    height: 20px;
+    width: 20px;
   }
 
   .veterans-text {
     font-size: 16px;
   }
-}
 
-@media screen and (max-width: 1300px) {
+  .hero-text-wrapper {
+    margin-top: 75px;
+  }
+
   .hero-text {
     font-size: 50px;
   }
@@ -309,7 +341,7 @@
   }
 
   .navbar {
-    width: 100%;
+    width: 90%;
   }
 
   .info-title-text {
@@ -343,11 +375,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
     flex-wrap: wrap;
   }
 
-  .logo-phone {
+  .logo-container {
     width: 50%;
   }
 
@@ -401,7 +432,6 @@
   }
 
   .hero-text-wrapper {
-    margin-top: 0;
     width: 100%;
   }
 
