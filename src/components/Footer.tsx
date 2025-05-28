@@ -1,6 +1,4 @@
 import {
-  Clock,
-  Envelope,
   House,
   MapPin,
   Phone,
