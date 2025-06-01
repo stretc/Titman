@@ -5,7 +5,7 @@ export const Promise = () => {
   return (
     <div className="promise-container">
       {/* Change Bg Image */}
-      <div className="promise-img bg-[url('https://uploads-ssl.webflow.com/6033b644793e4daa2b27e2e5/6033c26a9f83996416c79a47_BG%20Image%20(1).png')] bg-center bg-cover bg-no-repeat h-[600px] flex justify-center items-center bg-[#f5f5f5]">
+      <div className="promise-img bg-[#02133c] bg-center bg-cover bg-no-repeat h-[600px] flex justify-center items-center">
         <div className="flex w-[80%] h-full flex-col justify-center">
           <div className="flex items-center mb-[30px]">
             <div className="w-[25px] h-[25px] mr-[16px]">

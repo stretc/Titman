@@ -30,30 +30,48 @@ export const TeamMembers = () => {
               </div>
 
               <div className="team-images-wrapper">
-                <div className="chris-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5">
+                <div
+                  className="chris-member team-members-img group transition-transform duration-300 ease-out hover:-translate-y-4 relative overflow-hidden"
+                  tabIndex={0}
+                >
+                  <div className="member-name bg-gradient-to-t from-white/85 to-transparent absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-10">
                     <div className="team-member-info flex justify-between text-center">
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Chris Titman
-                      </h4>
+                      <h4 className="line-clamp-2 font-[600]">Chris Titman</h4>
+                    </div>
+                    <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#02133c] mt-2">
+                      Founder & Lead Engineer. Chris brings over 20 years of
+                      hands-on experience in mechanical systems and team
+                      leadership.
                     </div>
                   </div>
                 </div>
-                <div className="tommy-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5">
+                <div
+                  className="tommy-member team-members-img group transition-transform duration-300 ease-out hover:-translate-y-4 relative overflow-hidden"
+                  tabIndex={0}
+                >
+                  <div className="member-name bg-gradient-to-t from-white/85 to-transparent absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-10">
                     <div className="team-member-info flex justify-between">
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Tommy Harris
-                      </h4>
+                      <h4 className="line-clamp-2 font-[600]">Tommy Harris</h4>
+                    </div>
+                    <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#02133c] mt-2">
+                      Founder & Lead Engineer. Chris brings over 20 years of
+                      hands-on experience in mechanical systems and team
+                      leadership.
                     </div>
                   </div>
                 </div>
-                <div className="elijah-member team-members-img">
-                  <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-15">
+                <div
+                  className="elijah-member team-members-img group transition-transform duration-300 ease-out hover:-translate-y-4 relative overflow-hidden"
+                  tabIndex={0}
+                >
+                  <div className="member-name bg-gradient-to-t from-white/85 to-transparent absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-10">
                     <div className="team-member-info flex justify-between">
-                      <h4 className="line-clamp-2 font-[600] text-[#02133c]">
-                        Elijah Taylor
-                      </h4>
+                      <h4 className="line-clamp-2 font-[600]">Elijah Taylor</h4>
+                    </div>
+                    <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#02133c] mt-2">
+                      Founder & Lead Engineer. Chris brings over 20 years of
+                      hands-on experience in mechanical systems and team
+                      leadership.
                     </div>
                   </div>
                 </div>
