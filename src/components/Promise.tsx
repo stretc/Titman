@@ -30,7 +30,7 @@ export const Promise = () => {
           {/* Grid */}
           <div className="promise-grid flex justify-between">
             <div className="promise-item">
-              <div className="bg-[url('/public/promise/quality.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
+              <div className="bg-[url('/promise/quality.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
               <div className="flex w-[235px] flex-col justify-around">
                 <div className="promise-item-header font-[Open Sans] text-center text-[#02133c] font-[700] text-[14px]">
                   Quality Service. Every time.
@@ -43,7 +43,7 @@ export const Promise = () => {
             </div>
 
             <div className="promise-item">
-              <div className="bg-[url('/public/promise/certified.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
+              <div className="bg-[url('/promise/certified.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
               <div className="flex w-[235px] flex-col justify-around">
                 <div className="promise-item-header font-[Open Sans] text-center text-[#02133c] font-[700] text-[14px]">
                   Certifed Professional Services
@@ -56,7 +56,7 @@ export const Promise = () => {
             </div>
 
             <div className="promise-item">
-              <div className="bg-[url('/public/promise/people.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
+              <div className="bg-[url('/promise/people.png')] mr-[23px] bg-center bg-contain bg-no-repeat  w-[43px] h-[43px] z-100"></div>
               <div className="flex w-[235px] flex-col justify-around">
                 <div className="promise-item-header font-[Open Sans] text-center text-[#02133c] font-[700] text-[14px]">
                   Real People. Honest Work.

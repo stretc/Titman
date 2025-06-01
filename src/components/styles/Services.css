@@ -1,29 +1,29 @@
 .oil-change-image {
-  background-image: url("/public/services/oil-change.png");
+  background-image: url("/services/oil-change.png");
 }
 
 .inpection-image {
-  background-image: url("/public/services/inspection.png");
+  background-image: url("/services/inspection.png");
 }
 
 .auto-repair-image {
-  background-image: url("/public/services/repair.png");
+  background-image: url("/services/repair.png");
 }
 
 .batteries-image {
-  background-image: url("/public/services/battery.png");
+  background-image: url("/services/battery.png");
 }
 
 .tires-image {
-  background-image: url("/public/services/tires.png");
+  background-image: url("/services/tires.png");
 }
 
 .brakes-image {
-  background-image: url("/public/services/brakes.png");
+  background-image: url("/services/brakes.png");
 }
 
 .detailing-image {
-  background-image: url("/public/services/detail.png");
+  background-image: url("/services/detail.png");
 }
 
 .service-cards {

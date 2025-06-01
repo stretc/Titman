@@ -1,0 +1,33 @@
+.ending-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding-bottom: 40px;
+  margin-top: -200px;
+  gap: 20px;
+}
+
+.ending-container iframe {
+  max-width: 90vw;
+  width: 600px;
+  height: 450px;
+  min-width: 250px;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+  .ending-container {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+  .ending-container iframe {
+    width: 95vw;
+    height: 300px;
+    max-width: 100%;
+  }
+}
