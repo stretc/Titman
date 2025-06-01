@@ -6,7 +6,7 @@ import {
   UsersFour,
   Wrench,
 } from "@phosphor-icons/react";
-import "./styles/Footer.css"; // ← Import the custom CSS
+import "./styles/Footer.css";
 
 export const Footer = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
