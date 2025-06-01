@@ -9,6 +9,7 @@ import { TeamMembers } from "./components/TeamMembers";
 import { TopSection } from "./components/TopSection";
 import { Footer } from "./components/Footer";
 import { BackToTop } from "./components/BackToTop";
+import { Ending } from "./components/Ending";
 
 function App() {
   const [isAppReady, setIsAppReady] = useState(false);
@@ -45,6 +46,10 @@ function App() {
 
         <section id="team-members">
           <TeamMembers />
+        </section>
+
+        <section id="Ending">
+          <Ending />
         </section>
 
         <section id="footer">
