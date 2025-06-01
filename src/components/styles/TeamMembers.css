@@ -23,15 +23,6 @@
   opacity: 1;
 }
 
-
-@media (hover: none) and (pointer: coarse) {
-  .group:focus .member-description,
-  .group:focus-within .member-description {
-    max-height: 10rem;
-    opacity: 1;
-  }
-}
-
 .team-images-wrapper {
   margin-top: 150px;
   display: flex;
