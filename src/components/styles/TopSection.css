@@ -321,18 +321,24 @@
 }
 
 @media (max-width: 1045px) {
+  .hero-bg {
+    height: 650px;
+  }
+
   .hero-text-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 40px;
   }
 
   .hero-text {
     font-size: 48px;
     line-height: 48px;
     text-align: center;
+    margin-top: 0;
   }
 
   .veterans {
