@@ -101,8 +101,12 @@
 
   .team-members-container {
     margin-top: -50px;
-    height: 1100px;
+    height: 1000px;
     width: 90%;
+  }
+
+  .team-heading {
+    margin-bottom: 10px;
   }
 
   .team-heading h1 {
@@ -111,9 +115,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  .team-heading {
-    margin-bottom: 50px;
-  }
 
   .team-heading h1 {
     font-size: 16px;

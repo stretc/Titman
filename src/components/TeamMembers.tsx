@@ -39,9 +39,9 @@ export const TeamMembers = () => {
                       <h4 className="line-clamp-2 font-[600]">Chris Titman</h4>
                     </div>
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Founder & Lead Engineer. Chris brings over 20 years of
-                      hands-on experience in mechanical systems and team
-                      leadership.
+                      Chris owns a local auto shop and knows cars inside and
+                      out. He’s practical, hardworking, and always ready to jump
+                      in and help wherever needed.
                     </div>
                   </div>
                 </div>
@@ -54,9 +54,10 @@ export const TeamMembers = () => {
                       <h4 className="line-clamp-2 font-[600]">Tommy Harris</h4>
                     </div>
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Founder & Lead Engineer. Chris brings over 20 years of
-                      hands-on experience in mechanical systems and team
-                      leadership.
+                      Tommy’s the kind of guy who’s always up for a challenge.
+                      Dependable and quick to learn, he brings energy and a
+                      positive attitude to everything he does. A real team
+                      player through and through.
                     </div>
                   </div>
                 </div>
@@ -69,9 +70,10 @@ export const TeamMembers = () => {
                       <h4 className="line-clamp-2 font-[600]">Elijah Taylor</h4>
                     </div>
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Founder & Lead Engineer. Chris brings over 20 years of
-                      hands-on experience in mechanical systems and team
-                      leadership.
+                      Elijah is Chris' son and brings that same hardworking
+                      spirit to the team. He’s sharp, eager to learn, and not
+                      afraid to get his hands dirty. A great addition with a
+                      bright future ahead.
                     </div>
                   </div>
                 </div>

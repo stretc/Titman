@@ -18,7 +18,7 @@
   inset: 0;
   background: url("/working-on-car.jpg") no-repeat center 40%;
   background-size: cover;
-  opacity: .5; /* Adjust this value for desired transparency */
+  opacity: .5;
   z-index: 0;
   pointer-events: none;
 }
@@ -450,7 +450,6 @@
     font-size: 32px;
     line-height: 42px;
     text-align: center;
-    margin-top: 75px;
   }
 
   .hero-btns {
@@ -461,10 +460,6 @@
 
   .hero-btns button {
     width: 80%;
-  }
-
-  .hero-bg {
-    height: 825px;
   }
 
   .walk-ins span {

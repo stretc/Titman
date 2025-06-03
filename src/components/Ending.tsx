@@ -3,14 +3,15 @@ import "./styles/Ending.css";
 export const Ending = () => {
   return (
     <div className="ending-container flex gap-20">
-      <div className="">
+      <div className="text-[#02133c]">
+        Call us at{" "}
         <a
-          className="bg-[#02133c] text-[#fff] py-[10px] px-[20px] font-[600] rounded-[5px] hover:bg-[#062b70] transition-all duration-300"
-          href="tel:+1 (620) 363-0432"
+          className="text-[#750000] font-[600] underline"
+          href="tel:+16203630432"
         >
-          Call Us
-        </a>
-        <div className=""></div>
+          +1 (620) 363-0432
+        </a>{" "}
+        or visit us at our shop shown below.
       </div>
 
       <iframe
