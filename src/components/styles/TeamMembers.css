@@ -3,7 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 10;
-  width: 30%;
+  width: 40%;
   height: clamp(150px, 50vh, 375px);
   min-width: 150px;
   min-height: 150px;
@@ -23,7 +23,7 @@
 }
 
 .team-images-wrapper {
-  margin-top: 150px;
+  margin-top: 75px;
   display: flex;
   justify-content: space-between;
   gap: 50px;
@@ -54,7 +54,7 @@
 @media screen and (max-width: 1770px) {
   .team-members-img {
     height: 250px;
-    width: 25%;
+    width: 45%;
   }
   
   .team-member-info {
@@ -64,7 +64,8 @@
 
 @media screen and (max-width: 1200px) {
   .team-members-wrapper {
-    height: 1200px;
+    margin-top: 125px;
+    height: 900px;
   }
   
   .back-team {
@@ -84,7 +85,8 @@
   }
 
   .team-members-container {
-    height: auto;
+    margin-top: -350px;
+    height: 900px;
     width: 90%;
   }
 
@@ -95,13 +97,9 @@
 
 
 @media screen and (max-width: 768px) {
-  .team-members-wrapper {
-    height: 1100px;
-  }
-
   .team-members-container {
-    margin-top: -50px;
-    height: 1000px;
+    margin-top: -350px;
+    height: 800px;
     width: 90%;
   }
 
