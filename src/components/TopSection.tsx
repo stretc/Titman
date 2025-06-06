@@ -1,4 +1,5 @@
 import {
+  ArrowRight,
   Clock,
   Info,
   MapPin,
@@ -16,10 +17,8 @@ export const TopSection = () => {
     const href = e.currentTarget.getAttribute("href");
     if (!href) return;
 
-    // Get the id from the href
     const id = href.substring(1);
 
-    // Find the element by id
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -122,23 +121,55 @@ export const TopSection = () => {
             </div>
           </div>
 
-          <div className="walk-ins mr-[35px] p-[25px] rounded-lg items-center flex flex-row">
-            <Clock
-              size={30}
-              weight="bold"
-              className="info-icon mr-[15px]"
-              fill="#fff"
-            />
+          <div className="">
+            <div className="walk-ins mr-[35px] p-[25px] rounded-lg items-center flex flex-row">
+              <Clock
+                size={30}
+                weight="bold"
+                className="info-icon mr-[15px]"
+                fill="#fff"
+              />
 
-            <div className="flex flex-col items-center justify-center">
-              <span className="text-2xl text-white font-[500] font-[Montserrat]">
-                Walks-Ins Welcomed!
-              </span>
+              <div className="">
+                <div className="flex flex-col items-center justify-center">
+                  <span className="text-2xl text-white font-[500] font-[Montserrat]">
+                    Walks-Ins Welcomed!
+                  </span>
 
-              <div className="text-[20px] text-[#fff] flex justify-center flex-col text-center">
-                <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
-                <p>Sat: 9:00 AM - 1:00 PM</p>
+                  <div className="text-[20px] text-[#fff] flex justify-center flex-col text-center">
+                    <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+                    <p>Sat: 9:00 AM - 1:00 PM</p>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div className="flex flex-col items-center justify-center mt-[25px] text-[#fff]">
+              <div className="">Ready to Get Started?</div>
+              <a href="tel: +1 (620) 363-0432" className="hero-link mt-[20px]">
+                <div className="call-today-container bg-[#c40b0b] w-[194px] h-[40px] pl-[15px] flex relative justify-between items-center">
+                  <div className="w-full flex items-center">
+                    <Phone
+                      height={"18px"}
+                      width={"18px"}
+                      weight="bold"
+                      className="mr-[5px]"
+                    />
+                    <div className="text-[14px] font-[700] leading-[24px]">
+                      CALL TODAY
+                    </div>
+                  </div>
+
+                  <div className="appt-arr-div absolute right-0 top-0 left-auto bottom-auto z-0 flex w-[43px] h-[43px] justify-center items-center">
+                    <div className="w-auto h-auto ml-[14px] items-center flex justify-center">
+                      <ArrowRight
+                        height={"18px"}
+                        width={"18px"}
+                        weight="bold"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
