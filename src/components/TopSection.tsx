@@ -52,7 +52,7 @@ export const TopSection = () => {
 
               <a
                 className="address underline-anim"
-                href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
+                href="https://maps.app.goo.gl/ofMsuyQhZaUzRQkR6"
                 target="_blank"
               >
                 <div className="flex flex-row items-center">

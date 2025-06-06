@@ -68,7 +68,7 @@ export const Footer = () => {
                 </span>
               </a>
               <a
-                href="https://maps.app.goo.gl/5D3yc9HptRT6by6p6"
+                href="https://maps.app.goo.gl/ofMsuyQhZaUzRQkR6"
                 target="_blank"
               >
                 <MapPin height={25} width={25} className="footer-icon" />
