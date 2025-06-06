@@ -21,7 +21,7 @@ export const TeamMembers = () => {
                 </div>
               </div>
 
-              <div className="team-heading w-full mb-[100px] flex justify-center text-center">
+              <div className="team-heading w-full mb-[0px] flex justify-center text-center">
                 <h1 className="text-[8vw] sm:text-[6vw] md:text-[4vw] lg:text-[36px] font-bold text-[#02133c] mt-0">
                   Our Hands Built This.
                   <br />
@@ -39,9 +39,10 @@ export const TeamMembers = () => {
                       <h4 className="line-clamp-2 font-[600]">Chris Titman</h4>
                     </div>
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Chris owns a local auto shop and knows cars inside and
-                      out. He’s practical, hardworking, and always ready to jump
-                      in and help wherever needed.
+                      Chris is the owner/operator of Titman Tire & Lube and
+                      enjoys helping the local community. He’s practical,
+                      hardworking, and always ready to jump in and help wherever
+                      needed.
                     </div>
                   </div>
                 </div>
@@ -56,24 +57,7 @@ export const TeamMembers = () => {
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
                       Tommy’s the kind of guy who’s always up for a challenge.
                       Dependable and quick to learn, he brings energy and a
-                      positive attitude to everything he does. A real team
-                      player through and through.
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="elijah-member team-members-img group transition-transform duration-300 ease-out hover:-translate-y-4 relative overflow-hidden"
-                  tabIndex={0}
-                >
-                  <div className="member-name bg-gradient-to-t from-black/85 to-transparent absolute inset-x-0 bottom-0 z-10 flex flex-col justify-end space-y-0.5 p-4 pt-10">
-                    <div className="team-member-info flex justify-between">
-                      <h4 className="line-clamp-2 font-[600]">Elijah Taylor</h4>
-                    </div>
-                    <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Elijah is Chris' son and brings that same hardworking
-                      spirit to the team. He’s sharp, eager to learn, and not
-                      afraid to get his hands dirty. A great addition with a
-                      bright future ahead.
+                      positive attitude to everything he does.
                     </div>
                   </div>
                 </div>
