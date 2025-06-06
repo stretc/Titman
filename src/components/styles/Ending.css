@@ -51,6 +51,6 @@ a {
 
 @media screen and (max-width: 768px) {
   .ending-container {
-    margin-top: -200px;
+    margin: -200px 40px 0 40px;
   }
 }
