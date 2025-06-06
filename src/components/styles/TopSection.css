@@ -2,6 +2,10 @@
   max-width: 100%;
 }
 
+.hero-link {
+  text-decoration: none;
+}
+
 .hero-bg {
   position: relative;
   background-color: #000000;
@@ -223,21 +227,32 @@
 }
 
 .flag {
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   background: url("/flag.png") no-repeat center;
   background-size: contain;
 }
 
 .i-icon {
-  height: 25px;
-  width: 25px;
+  height: 18px;
+  width: 18px;
 }
 
 .veterans-text {
   color: #fff;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+.appt-arr-div {
+  background-image: url("/arrow-bg.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: contain ;
+}
+
+.call-today-container:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 1500px) {
