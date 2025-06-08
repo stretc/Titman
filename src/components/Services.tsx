@@ -27,75 +27,95 @@ export const Services = () => {
           </div>
 
           {/* Services Cards */}
-          <div className="service-cards grid">
-            <div className="oil-change-div grid-item">
-              <div className="grid-item-container">
-                <div className="oil-change-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Oil Change</div>
+          <div className="service-cards-wrapper">
+            <div className="service-cards service-cards-top">
+              <div className="oil-change-div grid-item">
+                <div className="grid-item-container">
+                  <div className="oil-change-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Oil Change</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Fast, professional oil change with premium oil included.
+                  </div>
                 </div>
-                <div className="grid-item-description">
-                  Fast, professional oil change with premium oil included.
+              </div>
+
+              <div className="inpection-div grid-item">
+                <div className="grid-item-container">
+                  <div className="inpection-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">
+                      Multi-Point Inspections
+                    </div>
+                  </div>
+                  <div className="grid-item-description">
+                    Comprehensive inspections to ensure vehicle safety.
+                  </div>
+                </div>
+              </div>
+
+              <div className="batteries-div grid-item">
+                <div className="grid-item-container">
+                  <div className="batteries-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Batteries</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Battery testing and replacement to keep you powered.
+                  </div>
+                </div>
+              </div>
+
+              <div className="side-by-side-div grid-item">
+                <div className="grid-item-container">
+                  <div className="side-by-side-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Side By Sides (UTVs)</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Side by Side vehicle maintenance and repairs for off-road
+                    fun.
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="inpection-div grid-item">
-              <div className="grid-item-container">
-                <div className="inpection-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Multi-Point Inspections</div>
-                </div>
-                <div className="grid-item-description">
-                  Comprehensive inspections to ensure vehicle safety.
-                </div>
-              </div>
-            </div>
-
-            <div className="batteries-div grid-item">
-              <div className="grid-item-container">
-                <div className="batteries-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Batteries</div>
-                </div>
-                <div className="grid-item-description">
-                  Battery testing and replacement to keep you powered.
+            {/* Bottom row: 3 cards */}
+            <div className="service-cards service-cards-bottom">
+              <div className="tires-div grid-item">
+                <div className="grid-item-container">
+                  <div className="tires-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Tires</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Tire inspection, rotation, and replacement for safe driving.
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="tires-div grid-item">
-              <div className="grid-item-container">
-                <div className="tires-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Tires</div>
-                </div>
-                <div className="grid-item-description">
-                  Tire inspection, rotation, and replacement for safe driving.
+              <div className="brakes-div grid-item">
+                <div className="grid-item-container">
+                  <div className="brakes-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Braking System</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Brake inspection and service for reliable stopping power.
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="brakes-div grid-item">
-              <div className="grid-item-container">
-                <div className="brakes-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Braking System</div>
-                </div>
-                <div className="grid-item-description">
-                  Brake inspection and service for reliable stopping power.
-                </div>
-              </div>
-            </div>
-
-            <div className="auto-repair-div grid-item">
-              <div className="grid-item-container">
-                <div className="auto-repair-image grid-item-image"></div>
-                <div className="mb-[20px]">
-                  <div className="grid-item-title">Light Mechanics</div>
-                </div>
-                <div className="grid-item-description">
-                  Minor mechanical repairs to maintain vehicle performance.
+              <div className="auto-repair-div grid-item">
+                <div className="grid-item-container">
+                  <div className="auto-repair-image grid-item-image"></div>
+                  <div className="mb-[20px]">
+                    <div className="grid-item-title">Light Mechanics</div>
+                  </div>
+                  <div className="grid-item-description">
+                    Minor mechanical repairs to maintain vehicle performance.
+                  </div>
                 </div>
               </div>
             </div>

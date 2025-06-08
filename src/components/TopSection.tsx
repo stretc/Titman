@@ -133,7 +133,7 @@ export const TopSection = () => {
               <div className="">
                 <div className="flex flex-col items-center justify-center">
                   <span className="text-2xl text-white font-[500] font-[Montserrat]">
-                    Walks-Ins Welcomed!
+                    Walks-Ins Welcome!
                   </span>
 
                   <div className="text-[20px] text-[#fff] flex justify-center flex-col text-center">
