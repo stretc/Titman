@@ -29,14 +29,15 @@
 .service-cards-top {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24;
+  gap: 24px;
   justify-content: center;
 }
 
 .service-cards-bottom {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, auto);
   gap: 24px;
+  margin-top: 24px;
   justify-content: center;
 }
 
@@ -84,7 +85,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1350px) {
   .services-container {
     height: auto;
     padding-top: 100px;
@@ -114,10 +115,6 @@
   .service-cards-top, .service-cards-bottom {
     grid-template-columns: 1fr;
     gap: 24px;
-  }
-
-  .tires-div {
-    margin-top: 24px;
   }
 
   .services-header {
