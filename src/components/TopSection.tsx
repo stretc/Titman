@@ -1,7 +1,7 @@
 import {
   ArrowRight,
   Clock,
-  Info,
+  /*Info,*/
   MapPin,
   Phone,
   ShieldCheck,
