@@ -55,9 +55,11 @@ export const TeamMembers = () => {
                       <h4 className="line-clamp-2 font-[600]">Tommy Harris</h4>
                     </div>
                     <div className="member-description max-h-0 opacity-0 transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-focus:max-h-40 group-focus:opacity-100 overflow-hidden text-[16px] font-[500] text-[#fff] mt-2">
-                      Tommy’s the kind of guy who’s always up for a challenge.
-                      Dependable and quick to learn, he brings energy and a
-                      positive attitude to everything he does.
+                      Tommy is a reliable, hardworking team member who thrives
+                      on tackling new challenges. He brings a strong work ethic,
+                      upbeat attitude, and steady enthusiasm to every job in the
+                      shop. His quick adaptability and positive energy make him
+                      a valuable asset to the team.
                     </div>
                   </div>
                 </div>
