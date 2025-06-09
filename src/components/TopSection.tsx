@@ -113,11 +113,13 @@ export const TopSection = () => {
               <p className="veterans-text tab-text-vet">
                 We Honor Our Veterans
               </p>
+              {/* 
               <Info
                 fill="#fff"
                 weight="bold"
                 className="i-icon pointer hover:bg-[#535353] rounded-full"
               />
+              */}
             </div>
           </div>
 
